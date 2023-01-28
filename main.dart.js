@@ -7588,8 +7588,9 @@ ly:function ly(){},
 Im:function Im(){},
 M9:function M9(){},
 va:function va(){},
-vb:function vb(a,b){this.c=a
-this.a=b},
+vb:function vb(a,b,c){this.c=a
+this.Q=b
+this.a=c},
 Ac:function Ac(a,b,c){var _=this
 _.e=_.d=$
 _.r=_.f=0
@@ -37533,15 +37534,16 @@ o=A.iH(r,o.ga5G(),s)}return A.eN(B.aA,o,B.T,!1,p,p,p,p,p,p,p,p,p,p,q.ga1y(),p,p,
 gHL(){var s=this.r
 this.a.toString
 return s===1},
-a1b(){var s=this,r=s.gHL(),q=s.w=!1
-s.a.toString
-if(r){q=s.f!==2
-if(q){s.r=0;++s.f}else return}else ++s.r
-if(s.c!=null)s.aa(new A.abq())
-q=s.d
-q===$&&A.b()
-q.m()
-s.HB()},
+a1b(){var s,r=this,q=r.gHL()
+r.w=!1
+r.a.toString
+if(q)r.r=0
+else ++r.r
+if(r.c!=null)r.aa(new A.abq())
+s=r.d
+s===$&&A.b()
+s.m()
+r.HB()},
 HB(){var s,r=this,q=r.a.c[r.r]
 r.e=q
 q=r.d=A.cr(null,q.d,null,null,r)
@@ -73702,7 +73704,7 @@ p=A.a_(q,new A.o1(A.aoZ(q,q,new A.lx("ardiwebsite.png",q,q)),q,q,q,q,q,q,B.S,B.b
 s=A.d_(q,q,B.i,q,q,q,q,q,q,q,q,q,q,q,q,q,q,!0,q,q,q,q,q,q,q,q)
 s=A.apC("Ardi Website",A.bX(0,200,0),s)
 r=A.d_(q,q,B.i,q,q,q,q,q,q,q,q,q,q,q,q,q,q,!0,q,q,q,q,q,q,q,q)
-return A.fO(q,q,A.a_(q,A.i6(A.a([A.bQ(A.a([A.a_(q,A.bQ(A.a([o,p,new A.vb(A.a([s,A.apC("I am Programmer",A.bX(0,200,0),r)],t.u6),q),A.O(q,50,q)],m),B.w,B.z,B.u),B.h,B.l,q,q,q,q,q,q,q,q,1/0),A.O(q,50,q),A.dX(A.a([new A.m8("ProfilKu",B.mV,0,q),A.O(q,q,15),new A.m8("Show Case",B.Bl,0,q),A.O(q,q,15),new A.m8("Toko",B.Bf,0,q)],m),B.w,B.aN,B.u),A.O(q,10,q),A.dX(A.a([new A.m8(u.a,B.Bi,1,q)],m),B.w,B.aN,B.u),new A.bo(new A.a8(0,100,0,100),A.dX(A.a([A.P(" 2023 ",q,q,q,q,q,q,q,A.d_(q,q,B.al,q,q,q,q,q,q,q,q,q,q,q,q,q,q,!0,q,q,q,q,q,q,q,q),q,q,q),A.cX(B.Bj,B.al,q),A.P(" Ardirsaputra",q,q,q,q,q,q,q,A.d_(q,q,B.al,q,q,q,q,q,q,q,q,q,q,q,q,q,q,!0,q,q,q,q,q,q,q,q),q,q,q)],m),B.w,B.aN,B.u),q)],m),B.w,B.z,B.u)],m)),B.h,q,q,q,q,q,q,q,q,q,q),n,q)}}
+return A.fO(q,q,A.a_(q,A.i6(A.a([A.bQ(A.a([A.a_(q,A.bQ(A.a([o,p,new A.vb(A.a([s,A.apC("I am Programmer",A.bX(0,200,0),r)],t.u6),!0,q),A.O(q,50,q)],m),B.w,B.z,B.u),B.h,B.l,q,q,q,q,q,q,q,q,1/0),A.O(q,50,q),A.dX(A.a([new A.m8("ProfilKu",B.mV,0,q),A.O(q,q,15),new A.m8("Show Case",B.Bl,0,q),A.O(q,q,15),new A.m8("Toko",B.Bf,0,q)],m),B.w,B.aN,B.u),A.O(q,10,q),A.dX(A.a([new A.m8(u.a,B.Bi,1,q)],m),B.w,B.aN,B.u),new A.bo(new A.a8(0,100,0,100),A.dX(A.a([A.P(" 2023 ",q,q,q,q,q,q,q,A.d_(q,q,B.al,q,q,q,q,q,q,q,q,q,q,q,q,q,q,!0,q,q,q,q,q,q,q,q),q,q,q),A.cX(B.Bj,B.al,q),A.P(" Ardirsaputra",q,q,q,q,q,q,q,A.d_(q,q,B.al,q,q,q,q,q,q,q,q,q,q,q,q,q,q,!0,q,q,q,q,q,q,q,q),q,q,q)],m),B.w,B.aN,B.u),q)],m),B.w,B.z,B.u)],m)),B.h,q,q,q,q,q,q,q,q,q,q),n,q)}}
 A.ad0.prototype={
 $0(){var s,r=this.a
 if(A.V($.aO()).ay.a!==B.f){s=A.kT(B.f,null)
@@ -73990,7 +73992,7 @@ r=a0.A(s).f
 a=A.cI(new A.bo(B.b9,A.eD(A.a_(g,new A.bo(B.fO,A.a_(g,A.bQ(A.a([A.P("Bulanan : "+B.d.M(h.d,2)+" MB ( "+B.d.M(h.e,2)+" MB/Hari)",g,g,g,g,g,g,g,g,g,g,g),A.P("Harian    : "+B.d.M(h.e,2)+" MB ( "+B.d.M(h.e/24,2)+" MB/Jam)",g,g,g,g,g,g,g,g,g,g,g)],d),B.fH,B.z,B.u),B.h,g,g,g,g,40,g,g,g,g,g),g),B.h,g,g,g,g,g,g,g,g,g,r.a.a*0.9),g,10,g,new A.bG(a,B.t)),g),g,g)
 r=A.dQ(10)
 q=a0.A(s).f
-p=A.dX(A.a([A.O(g,g,16),A.a_(g,A.cX(B.Bd,B.O,g),B.h,g,g,g,g,g,g,g,g,g,g),A.a_(g,A.P("Youtube, Netflix, Amazon Prime, Tiktok (Video Stream)",g,g,g,g,g,g,g,A.d_(g,g,B.O,g,g,g,g,g,g,g,g,g,g,g,g,g,g,!0,g,g,g,g,g,g,g,g),g,g,g),B.h,g,g,g,g,30,new A.a8(0,15,0,0),g,g,g,g)],d),B.w,B.z,B.u)
+p=A.dX(A.a([A.O(g,g,16),A.a_(g,A.cX(B.Bd,B.O,g),B.h,g,g,g,g,g,g,g,g,g,g),A.a_(g,A.P("Youtube, Netflix, Tiktok (Video Stream)",g,g,g,g,g,g,g,A.d_(g,g,B.O,g,g,g,g,g,g,g,g,g,g,g,g,g,g,!0,g,g,g,g,g,g,g,g),g,g,g),B.h,g,g,g,g,30,new A.a8(0,15,0,0),g,g,g,g)],d),B.w,B.z,B.u)
 if(h.w===144)o=B.O
 else o=A.V(e).ay.a===B.f?B.l:B.i
 n=A.dQ(10)
@@ -74021,28 +74023,28 @@ o=A.dQ(10)
 o=A.dX(A.a([new A.bo(B.ci,n,g),new A.bo(B.ci,m,g),new A.bo(B.ci,l,g),new A.bo(B.ci,k,g),new A.bo(B.ci,j,g),new A.bo(B.ci,i,g),new A.bo(B.A9,A.eD(A.j4(!1,!0,A.a_(g,A.P("1440p",g,g,g,g,g,g,g,g,B.m,g,g),B.h,g,g,g,g,25,new A.a8(0,10,0,0),g,g,g,42),g,!0,g,g,g,g,g,g,g,g,g,new A.ac5(h),g,g,g,g),e,10,g,new A.bG(o,B.t)),g)],d),B.w,B.hC,B.u)
 e=a0.A(s).f
 i=h.f
-r=A.cI(new A.bo(B.b9,A.eD(A.a_(g,A.bQ(A.a([p,o,A.a_(g,A.Kz(100,B.al,B.d.M(i,1)+" Jam",24,0,new A.ac6(h),B.df,i),B.h,g,g,g,g,30,g,g,g,g,e.a.a*0.9),A.a_(g,A.P(B.d.M(h.f,1)+f+B.d.M(h.r,1)+" MB ("+B.d.M(h.r/60,1)+"MB/Menit)",g,g,g,g,g,g,g,g,g,g,g),B.h,g,g,g,g,30,g,g,g,g,g),A.a_(g,A.P("Kecepatan internet yang dibutuhkan "+B.d.M(h.y/8,1)+"Kb/s",g,g,g,g,g,g,g,g,g,g,g),B.h,g,g,g,g,30,g,g,g,g,g),A.a_(g,A.P("Mengestimasi bahwa selama itu menonton video",g,g,g,g,g,g,g,g,B.m,g,g),B.h,g,g,g,g,30,g,g,g,g,g)],d),B.w,B.z,B.u),B.h,g,g,g,g,g,g,g,g,g,q.a.a*0.9),g,10,g,new A.bG(r,B.t)),g),g,g)
+r=A.cI(new A.bo(B.b9,A.eD(A.a_(g,A.bQ(A.a([p,o,A.a_(g,A.Kz(100,B.al,B.d.M(i,1)+" Jam",24,0,new A.ac6(h),B.df,i),B.h,g,g,g,g,30,g,g,g,g,e.a.a*0.9),A.a_(g,A.P(B.d.M(h.f,1)+f+B.d.M(h.r,1)+" MB ("+B.d.M(h.r/60,1)+"MB/Menit)",g,g,g,g,g,g,g,g,B.m,g,g),B.h,g,g,g,g,45,g,g,g,g,g),A.a_(g,A.P("Kecepatan internet yang dibutuhkan "+B.d.M(h.y/8,1)+"Kb/s",g,g,g,g,g,g,g,g,g,g,g),B.h,g,g,g,g,45,g,g,g,g,g),A.a_(g,A.P("Mengestimasi bahwa selama itu menonton video",g,g,g,g,g,g,g,g,B.m,g,g),B.h,g,g,g,g,45,g,g,g,g,g)],d),B.w,B.z,B.u),B.h,g,g,g,g,g,g,g,g,g,q.a.a*0.9),g,10,g,new A.bG(r,B.t)),g),g,g)
 q=A.dQ(10)
 e=a0.A(s).f
 i=A.dX(A.a([A.O(g,g,16),A.a_(g,A.cX(B.mW,B.O,g),B.h,g,g,g,g,g,g,g,g,g,g),A.a_(g,A.P(" Music Streaming",g,g,g,g,g,g,g,A.d_(g,g,B.O,g,g,g,g,g,g,g,g,g,g,g,g,g,g,!0,g,g,g,g,g,g,g,g),g,g,g),B.h,g,g,g,g,30,new A.a8(0,15,0,0),g,g,g,g)],d),B.w,B.z,B.u)
 o=a0.A(s).f
 p=h.ch
-q=A.cI(new A.bo(B.b9,A.eD(A.a_(g,A.bQ(A.a([i,A.a_(g,A.Kz(100,B.al,B.d.M(p,1)+" Jam",24,0,new A.ac7(h),B.df,p),B.h,g,g,g,g,30,g,g,g,g,o.a.a*0.9),A.a_(g,A.P(B.d.M(h.ch,1)+f+B.d.M(h.CW,1)+" MB ("+B.d.M(h.CW/60,1)+"MB/Menit)",g,g,g,g,g,g,g,g,g,g,g),B.h,g,g,g,g,30,g,g,g,g,g),new A.bo(B.b9,A.a_(g,A.P("Mengestimasi bahwa digunakan untuk streaming music ",g,g,g,g,g,g,g,g,B.m,g,g),B.h,g,g,g,g,30,g,g,g,g,g),g)],d),B.w,B.z,B.u),B.h,g,g,g,g,g,g,g,g,g,e.a.a*0.9),g,10,g,new A.bG(q,B.t)),g),g,g)
+q=A.cI(new A.bo(B.b9,A.eD(A.a_(g,A.bQ(A.a([i,A.a_(g,A.Kz(100,B.al,B.d.M(p,1)+" Jam",24,0,new A.ac7(h),B.df,p),B.h,g,g,g,g,30,g,g,g,g,o.a.a*0.9),A.a_(g,A.P(B.d.M(h.ch,1)+f+B.d.M(h.CW,1)+" MB ("+B.d.M(h.CW/60,1)+"MB/Menit)",g,g,g,g,g,g,g,g,B.m,g,g),B.h,g,g,g,g,45,g,g,g,g,g),new A.bo(B.b9,A.a_(g,A.P("Mengestimasi bahwa digunakan untuk streaming music ",g,g,g,g,g,g,g,g,B.m,g,g),B.h,g,g,g,g,45,g,g,g,g,g),g)],d),B.w,B.z,B.u),B.h,g,g,g,g,g,g,g,g,g,e.a.a*0.9),g,10,g,new A.bG(q,B.t)),g),g,g)
 e=A.dQ(10)
 o=a0.A(s).f
 p=A.dX(A.a([A.O(g,g,16),A.a_(g,A.cX(B.mW,B.O,g),B.h,g,g,g,g,g,g,g,g,g,g),A.a_(g,A.P(" Browsing Web",g,g,g,g,g,g,g,A.d_(g,g,B.O,g,g,g,g,g,g,g,g,g,g,g,g,g,g,!0,g,g,g,g,g,g,g,g),g,g,g),B.h,g,g,g,g,30,new A.a8(0,15,0,0),g,g,g,g)],d),B.w,B.z,B.u)
 i=a0.A(s).f
 j=h.z
-e=A.cI(new A.bo(B.b9,A.eD(A.a_(g,A.bQ(A.a([p,A.a_(g,A.Kz(100,B.al,B.d.M(j,1)+" Jam",24,0,new A.ac8(h),B.df,j),B.h,g,g,g,g,30,g,g,g,g,i.a.a*0.9),A.a_(g,A.P(B.d.M(h.z,1)+f+B.d.M(h.Q,1)+" MB ("+B.d.M(h.Q/60,1)+"MB/Menit)",g,g,g,g,g,g,g,g,g,g,g),B.h,g,g,g,g,40,g,g,g,g,g),new A.bo(B.b9,A.a_(g,A.P("Mengestimasi bahwa selama itu hanya membuka web tanpa menonton video",g,g,g,g,g,g,g,g,B.m,g,g),B.h,g,g,g,g,60,g,g,g,g,g),g)],d),B.w,B.z,B.u),B.h,g,g,g,g,g,g,g,g,g,o.a.a*0.9),g,10,g,new A.bG(e,B.t)),g),g,g)
+e=A.cI(new A.bo(B.b9,A.eD(A.a_(g,A.bQ(A.a([p,A.a_(g,A.Kz(100,B.al,B.d.M(j,1)+" Jam",24,0,new A.ac8(h),B.df,j),B.h,g,g,g,g,30,g,g,g,g,i.a.a*0.9),A.a_(g,A.P(B.d.M(h.z,1)+f+B.d.M(h.Q,1)+" MB ("+B.d.M(h.Q/60,1)+"MB/Menit)",g,g,g,g,g,g,g,g,B.m,g,g),B.h,g,g,g,g,45,g,g,g,g,g),new A.bo(B.b9,A.a_(g,A.P("Mengestimasi bahwa selama itu hanya membuka web tanpa menonton video",g,g,g,g,g,g,g,g,B.m,g,g),B.h,g,g,g,g,45,g,g,g,g,g),g)],d),B.w,B.z,B.u),B.h,g,g,g,g,g,g,g,g,g,o.a.a*0.9),g,10,g,new A.bG(e,B.t)),g),g,g)
 o=A.dQ(10)
 i=a0.A(s).f
 j=A.dX(A.a([A.O(g,g,16),A.a_(g,A.cX(B.Bk,B.O,g),B.h,g,g,g,g,g,g,g,g,g,g),A.a_(g,A.P(" Game Multiplayer",g,g,g,g,g,g,g,A.d_(g,g,B.O,g,g,g,g,g,g,g,g,g,g,g,g,g,g,!0,g,g,g,g,g,g,g,g),g,g,g),B.h,g,g,g,g,30,new A.a8(0,15,0,0),g,g,g,g)],d),B.w,B.z,B.u)
 p=a0.A(s).f
 k=h.at
 p=A.a_(g,A.Kz(100,B.al,B.d.M(k,1)+" Jam",24,0,new A.ac0(h),B.df,k),B.h,g,g,g,g,30,g,g,g,g,p.a.a*0.9)
-k=A.a_(g,A.P(B.d.M(h.at,1)+f+B.d.M(h.ax,1)+" MB ("+B.d.M(h.ax/60,1)+"MB/Menit)",g,g,g,g,g,g,g,g,B.m,g,g),B.h,g,g,g,g,40,g,B.b9,g,g,g)
+k=A.a_(g,A.P(B.d.M(h.at,1)+f+B.d.M(h.ax,1)+" MB ("+B.d.M(h.ax/60,1)+"MB/Menit)",g,g,g,g,g,g,g,g,B.m,g,g),B.h,g,g,g,g,45,g,B.b9,g,g,g)
 s=a0.A(s).f
-return A.fO(c,b,A.a_(g,A.i6(A.a([a,r,q,e,A.cI(new A.bo(B.b9,A.eD(A.a_(g,A.bQ(A.a([j,p,k,new A.bo(B.b9,A.a_(g,A.P("Mengestimasi bahwa selama itu hanya bermain game multiplayer. game multiplayer memiliki variasi data yang berbeda beda estimasi ini merupakan rata-rata",g,g,g,g,g,g,g,g,B.m,g,g),B.h,g,g,g,g,60,g,g,g,g,s.a.a*0.9),g)],d),B.w,B.z,B.u),B.h,g,g,g,g,g,g,g,g,g,i.a.a*0.9),g,10,g,new A.bG(o,B.t)),g),g,g)],d)),B.h,g,g,g,g,g,g,g,g,g,g),g,g)}}
+return A.fO(c,b,A.a_(g,A.i6(A.a([a,r,q,e,A.cI(new A.bo(B.b9,A.eD(A.a_(g,A.bQ(A.a([j,p,k,new A.bo(B.b9,A.a_(g,A.P("Mengestimasi bahwa selama itu hanya bermain game multiplayer. game multiplayer memiliki variasi data yang berbeda beda estimasi ini merupakan rata-rata",g,g,g,g,g,g,g,g,B.m,g,g),B.h,g,g,g,g,80,g,g,g,g,s.a.a*0.9),g)],d),B.w,B.z,B.u),B.h,g,g,g,g,g,g,g,g,g,i.a.a*0.9),g,10,g,new A.bG(o,B.t)),g),g,g)],d)),B.h,g,g,g,g,g,g,g,g,g,g),g,g)}}
 A.abY.prototype={
 $0(){A.nV($.aO(),new A.abP(),null,null,t.z)},
 $S:0}
@@ -74327,11 +74329,11 @@ n===$&&A.b()
 n=A.P(n,o,o,o,o,o,o,o,A.d_(o,o,o,o,o,o,o,o,o,o,o,o,o,o,B.p,o,o,!0,o,o,o,o,o,o,o,o),o,o,o)
 s=p.d
 s===$&&A.b()
-s=A.a_(o,new A.wr(new A.lx("ardiwebsite.png",o,o),new A.lx(s,o,o),o),B.h,o,o,o,o,200,o,new A.a8(8,8,8,8),o,o,180)
+s=A.a_(o,new A.wr(new A.lx("ardiwebsite.png",o,o),new A.lx(s,o,o),o),B.h,o,o,o,o,200,o,new A.a8(8,8,8,8),o,o,150)
 r=p.e
 r===$&&A.b()
 q=t.p
-return A.cI(new A.bo(B.fO,A.a_(o,A.eD(A.a_(o,A.j4(!1,!0,A.bQ(A.a([new A.bo(B.fO,n,o),A.dX(A.a([s,A.a_(o,new A.vo(r,15,o),B.h,o,o,o,o,200,o,new A.a8(8,8,8,8),o,o,200)],q),B.w,B.aN,B.u)],q),B.w,B.z,B.u),o,!0,o,o,o,o,o,o,o,o,o,new A.V9(p),o,o,o,o),B.h,o,o,new A.el(o,o,new A.dk(B.t,B.t,B.t,new A.dw(B.O,20,B.ax,B.ai)),o,o,o,B.aT),o,250,o,o,o,o,450),o,10,o,new A.bG(new A.cH(B.H,new A.by(16,16),B.H,new A.by(16,16)),B.t)),B.h,o,o,o,o,o,o,o,o,o,600),o),o,o)}}
+return A.cI(new A.bo(B.fO,A.a_(o,A.eD(A.a_(o,A.j4(!1,!0,A.bQ(A.a([new A.bo(B.fO,n,o),A.dX(A.a([s,A.a_(o,new A.vo(r,15,o),B.h,o,o,o,o,200,o,new A.a8(8,8,8,8),o,o,180)],q),B.w,B.aN,B.u)],q),B.w,B.z,B.u),o,!0,o,o,o,o,o,o,o,o,o,new A.V9(p),o,o,o,o),B.h,o,o,new A.el(o,o,new A.dk(B.t,B.t,B.t,new A.dw(B.O,20,B.ax,B.ai)),o,o,o,B.aT),o,250,o,o,o,o,450),o,10,o,new A.bG(new A.cH(B.H,new A.by(16,16),B.H,new A.by(16,16)),B.t)),B.h,o,o,o,o,o,o,o,o,o,600),o),o,o)}}
 A.V9.prototype={
 $0(){var s=null,r=this.a.c
 r===$&&A.b()
