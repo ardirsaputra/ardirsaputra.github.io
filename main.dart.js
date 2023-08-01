@@ -73835,7 +73835,7 @@ var $async$$0=A.a5(function(a,b){if(a===1)return A.a1(b,r)
 while(true)switch(s){case 0:p=q.a
 if(p.a.c==="ProfilKu")A.q8($.aT(),new A.ahF(),null,null,t.z)
 if(p.a.c==="Show Case")A.q8($.aT(),new A.ahG(),null,null,t.z)
-if(p.a.c==="fiverr")A.kS(A.fg("https://www.fiverr.com/ardirs?public_mode=true",0,null))
+if(p.a.c==="Fiverr")A.kS(A.fg("https://www.fiverr.com/ardirs?public_mode=true",0,null))
 if(p.a.c===u.J)A.kS(A.fg("https://wa.me/6282282418992",0,null))
 return A.a2(null,r)}})
 return A.a3($async$$0,r)},
