@@ -1,11 +1,11 @@
 {
-    "name": "Ardi Ragil Saputra | Portofolio",
-    "short_name": "ARS | Portofolio",
+    "name": "portofolio",
+    "short_name": "portofolio",
     "start_url": ".",
     "display": "standalone",
-    "background_color": "#ffffff",
-    "theme_color": "#ffffff",
-    "description": "Portofolio PWA",
+    "background_color": "#0175C2",
+    "theme_color": "#0175C2",
+    "description": "A new Flutter project.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
