@@ -73001,7 +73001,7 @@ i=e.r
 p=A.bx(A.a([p,B.cA,A.a2("Let's Connect",g,g,i==null?g:i.aN(f.k3,B.z),g)],j),B.q,B.l,B.m)
 if(l)m=g
 else{l=f.rx
-m=m.b6(l==null?f.k3:l)}return A.jW(g,B.x,A.ax(g,A.lv(!0,A.jZ(new A.aq(new A.a5(d,24,d,24),A.aR(A.a([q,B.dd,r,B.V,new A.Jz(new A.a8n(a0),16,16,g,o,g),B.bW,A.bW(new A.aq(B.aV,A.aR(A.a([p,B.cB,A.a2("Interested in my work? Feel free to reach out through any of the platforms below:",g,g,m,g),B.V,new A.fu(new A.Uj(h,f,e),g),B.V,A.bx(A.a([A.d6(h.GH(a1,f,"contact@arsdev.com",B.EK,new A.Uk(),e,"Email")),B.aC,A.d6(h.GH(a1,f,"+62 822-8241-8992",B.f2,new A.Ul(),e,"WhatsApp"))],j),B.q,B.l,B.m)],j),B.F,B.l,B.m),g),a,0,g,new A.aX(n,new A.aQ(k,1,B.v,-1))),B.bW],j),B.F,B.l,B.m),g),g,B.O),!0),B.k,g,g,new A.aw(g,g,g,g,g,new A.d_(B.cN,B.c4,B.ah,s,g,g),B.A),g,g,g,g,g,g,g),!1)},
+m=m.b6(l==null?f.k3:l)}return A.jW(g,B.x,A.ax(g,A.lv(!0,A.jZ(new A.aq(new A.a5(d,24,d,24),A.aR(A.a([q,B.dd,r,B.V,new A.Jz(new A.a8n(a0),16,16,g,o,g),B.bW,A.bW(new A.aq(B.aV,A.aR(A.a([p,B.cB,A.a2("Interested in my work? Feel free to reach out through any of the platforms below:",g,g,m,g),B.V,new A.fu(new A.Uj(h,f,e),g),B.V,A.bx(A.a([A.d6(h.GH(a1,f,"fluzzzer@gmail.com",B.EK,new A.Uk(),e,"Email")),B.aC,A.d6(h.GH(a1,f,"+62 822-8241-8992",B.f2,new A.Ul(),e,"WhatsApp"))],j),B.q,B.l,B.m)],j),B.F,B.l,B.m),g),a,0,g,new A.aX(n,new A.aQ(k,1,B.v,-1))),B.bW],j),B.F,B.l,B.m),g),g,B.O),!0),B.k,g,g,new A.aw(g,g,g,g,g,new A.d_(B.cN,B.c4,B.ah,s,g,g),B.A),g,g,g,g,g,g,g),!1)},
 ps(a,b,c,d){var s,r,q=null,p=A.a2(b,q,q,q,q),o=d.k2
 o=A.M(B.c.N(178.5),o.m()>>>16&255,o.m()>>>8&255,o.m()&255)
 s=d.b
@@ -73058,7 +73058,7 @@ $2(a,b){var s="@ardirsaputra",r=this.a,q=this.b,p=this.c,o=r.tQ(a,B.C2,q,b,B.DV,
 return A.oB(B.b_,A.a([o,n,r.tQ(a,A.b0($.aJ()).ax.a===B.o?B.f:B.n,q,b,B.f3,"GitHub",p,"https://github.com/ardirsaputra","ardirsaputra"),r.tQ(a,B.Bz,q,b,B.f1,"LinkedIn",p,"https://www.linkedin.com/in/ardi-rs/","ardi-rs")],t.p),16,16)},
 $S:113}
 A.Uk.prototype={
-$0(){return A.dF(A.c_("mailto:contact@arsdev.com",0,null))},
+$0(){return A.dF(A.c_("mailto:fluzzzer@gmail.com",0,null))},
 $S:0}
 A.Ul.prototype={
 $0(){return A.dF(A.c_("https://wa.me/6282282418992",0,null))},
