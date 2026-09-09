@@ -331,34 +331,38 @@ ID: Git & GitHub
 EN: Git & GitHub
 
 #### [HTML baris 862]  `.tech-pill`
+ID: Docker
+EN: Docker
+
+#### [HTML baris 863]  `.tech-pill`
 ID: Figma (UI/UX)
 EN: Figma (UI/UX)
 
-#### [HTML baris 863]  `.tech-pill`
+#### [HTML baris 864]  `.tech-pill`
 ID: Postman API Testing
 EN: Postman API Testing
 
-#### [HTML baris 864]  `.tech-pill`
+#### [HTML baris 865]  `.tech-pill`
 ID: Mobile App Deployment & APK
 EN: Mobile App Deployment & APK
 
-#### [HTML baris 865]  `.tech-pill`
+#### [HTML baris 866]  `.tech-pill`
 ID: CI/CD Pipeline
 EN: CI/CD Pipeline
 
-#### [HTML baris 866]  `.tech-pill`
+#### [HTML baris 867]  `.tech-pill`
 ID: Performance Profiling
 EN: Performance Profiling
 
-#### [HTML baris 867]  `.tech-pill`
+#### [HTML baris 868]  `.tech-pill`
 ID: Data Analitik & Data Mining
 EN: Data Analitik & Data Mining
 
-#### [HTML baris 868]  `.tech-pill`
+#### [HTML baris 869]  `.tech-pill`
 ID: Sistem Analis
 EN: Sistem Analis
 
-#### [HTML baris 869]  `.tech-pill`
+#### [HTML baris 870]  `.tech-pill`
 ID: Metode Agile
 EN: Metode Agile
 
@@ -377,7 +381,7 @@ EN: Project Showcase
 ID: Aplikasi mobile dan sistem web yang pernah saya buat dan kelola.
 EN: Selected mobile applications and web systems I have developed and managed.
 
-#### [HTML baris 926]  `.banner-pill-info`
+#### [HTML baris 927]  `.banner-pill-info`
 ID: GPS Geofencing & Swafoto
 EN: GPS Geofencing & Swafoto
 
@@ -389,7 +393,7 @@ EN: Mobile App (Play Store)
 ID: SiapKerja Way Kanan (Mobile Presensi ASN)
 EN: SiapKerja Way Kanan (Mobile Attendance)
 
-#### [HTML baris 944]  `.highlight-cyan`
+#### [HTML baris 945]  `.highlight-cyan`
 ID: Google Play
 EN: Google Play
 
@@ -397,23 +401,23 @@ EN: Google Play
 ID: Aplikasi mobile presensi pegawai ASN di lingkungan Pemkab Way Kanan yang tersedia di Google Play Store. Dilengkapi fitur presensi berbasis GPS geofencing, verifikasi swafoto, dan pencatatan waktu kehadiran.
 EN: Official mobile attendance app for civil servants in Way Kanan Regency, published on Google Play Store. Features GPS geofencing radius validation, selfie verification, and check-in logging.
 
-#### [HTML baris 960]  `.project-tag`
+#### [HTML baris 961]  `.project-tag`
 ID: Google Play Store
 EN: Google Play Store
 
-#### [HTML baris 962]  `.project-tag`
+#### [HTML baris 963]  `.project-tag`
 ID: Flutter & Android
 EN: Flutter & Android
 
-#### [HTML baris 963]  `.project-tag`
+#### [HTML baris 964]  `.project-tag`
 ID: GPS Geofencing
 EN: GPS Geofencing
 
-#### [HTML baris 964]  `.project-tag`
+#### [HTML baris 965]  `.project-tag`
 ID: Swafoto Kehadiran
 EN: Swafoto Kehadiran
 
-#### [HTML baris 965]  `.project-tag`
+#### [HTML baris 966]  `.project-tag`
 ID: Presensi ASN
 EN: Presensi ASN
 
@@ -421,23 +425,23 @@ EN: Presensi ASN
 ID: Buka di Play Store
 EN: Open in Play Store
 
-#### [HTML baris 1021]  `.bumk-stat-chip`
+#### [HTML baris 1022]  `.bumk-stat-chip`
 ID: BUMK Desa
 EN: BUMK Desa
 
-#### [HTML baris 1024]  `.bumk-stat-chip`
+#### [HTML baris 1025]  `.bumk-stat-chip`
 ID: Pujodadi Bersatu
 EN: Pujodadi Bersatu
 
-#### [HTML baris 1038]  `.bumk-stat-chip`
+#### [HTML baris 1039]  `.bumk-stat-chip`
 ID: Tata Kelola
 EN: Tata Kelola
 
-#### [HTML baris 1041]  `.bumk-stat-chip`
+#### [HTML baris 1042]  `.bumk-stat-chip`
 ID: Keuangan BUMK
 EN: Keuangan BUMK
 
-#### [HTML baris 1052]  `.bumk-pill-info`
+#### [HTML baris 1053]  `.bumk-pill-info`
 ID: Pengelolaan Keuangan Per BUMK
 EN: Pengelolaan Keuangan Per BUMK
 
@@ -449,7 +453,7 @@ EN: Village Enterprise & Finance
 ID: BUMK Pengelolaan Keuangan BUMK
 EN: BUMK Village Financial Management
 
-#### [HTML baris 1073]  `.project-title`
+#### [HTML baris 1074]  `.project-title`
 ID: bumkpujodadibersatu.com
 EN: bumkpujodadibersatu.com
 
@@ -457,23 +461,23 @@ EN: bumkpujodadibersatu.com
 ID: Website sistem informasi dan tata kelola keuangan Badan Usaha Milik Kampung/Desa (BUMK) untuk pencatatan unit usaha desa, pembukuan kas transparan, dan akuntabilitas pelaporan dana desa secara terbuka, dengan contoh nyata pada bumkpujodadibersatu.com.
 EN: Web-based financial management system for village-owned enterprises (BUMK/BUMDes), supporting rural business accounting, transparent cashflow ledgers, and public financial accountability, implemented at bumkpujodadibersatu.com.
 
-#### [HTML baris 1090]  `.project-tag`
+#### [HTML baris 1091]  `.project-tag`
 ID: bumkpujodadibersatu.com
 EN: bumkpujodadibersatu.com
 
-#### [HTML baris 1092]  `.project-tag`
+#### [HTML baris 1093]  `.project-tag`
 ID: Sistem Keuangan Desa
 EN: Sistem Keuangan Desa
 
-#### [HTML baris 1093]  `.project-tag`
+#### [HTML baris 1094]  `.project-tag`
 ID: Laravel & PHP
 EN: Laravel & PHP
 
-#### [HTML baris 1094]  `.project-tag`
+#### [HTML baris 1095]  `.project-tag`
 ID: Tailwind CSS
 EN: Tailwind CSS
 
-#### [HTML baris 1095]  `.project-tag`
+#### [HTML baris 1096]  `.project-tag`
 ID: BUMDes / BUMK
 EN: BUMDes / BUMK
 
@@ -481,23 +485,23 @@ EN: BUMDes / BUMK
 ID: Buka Website
 EN: Visit Website
 
-#### [HTML baris 1145]  `.mabar-tile`
+#### [HTML baris 1146]  `.mabar-tile`
 ID: Taipan
 EN: Taipan
 
-#### [HTML baris 1149]  `.mabar-tile`
+#### [HTML baris 1150]  `.mabar-tile`
 ID: Ludo
 EN: Ludo
 
-#### [HTML baris 1153]  `.mabar-tile`
+#### [HTML baris 1154]  `.mabar-tile`
 ID: Gaple
 EN: Gaple
 
-#### [HTML baris 1157]  `.mabar-tile`
+#### [HTML baris 1158]  `.mabar-tile`
 ID: Ular Tangga
 EN: Ular Tangga
 
-#### [HTML baris 1165]  `.mabar-pill-info`
+#### [HTML baris 1166]  `.mabar-pill-info`
 ID: Live Multiplayer WebSockets
 EN: Live Multiplayer WebSockets
 
@@ -509,7 +513,7 @@ EN: Web Gaming Platform
 ID: mabarasik.com (Online Board Games)
 EN: mabarasik.com (Online Board Games)
 
-#### [HTML baris 1186]  `.project-title`
+#### [HTML baris 1187]  `.project-title`
 ID: mabarasik.com
 EN: mabarasik.com
 
@@ -517,43 +521,43 @@ EN: mabarasik.com
 ID: Website game online multiplayer (mabarasik.com) yang dapat dimainkan langsung di browser. Menyediakan permainan papan seperti Taipan, Ludo, Domino Gaple, dan Ular Tangga dengan room undangan dan WebSockets.
 EN: Online multiplayer board games website (mabarasik.com) playable in any browser. Features classic games like Taipan, Ludo, Domino Gaple, and Snakes & Ladders with room invite codes and WebSockets.
 
-#### [HTML baris 1202]  `.project-tag`
+#### [HTML baris 1203]  `.project-tag`
 ID: mabarasik.com
 EN: mabarasik.com
 
-#### [HTML baris 1204]  `.project-tag`
+#### [HTML baris 1205]  `.project-tag`
 ID: Web App
 EN: Web App
 
-#### [HTML baris 1205]  `.project-tag`
+#### [HTML baris 1206]  `.project-tag`
 ID: WebSockets
 EN: WebSockets
 
-#### [HTML baris 1206]  `.project-tag`
+#### [HTML baris 1207]  `.project-tag`
 ID: Game Multiplayer
 EN: Game Multiplayer
 
-#### [HTML baris 1207]  `.project-tag`
+#### [HTML baris 1208]  `.project-tag`
 ID: Responsive UI
 EN: Responsive UI
 
-#### [HTML baris 1257]  `.tool-chip-preview`
+#### [HTML baris 1258]  `.tool-chip-preview`
 ID: Eco Calc
 EN: Eco Calc
 
-#### [HTML baris 1261]  `.tool-chip-preview`
+#### [HTML baris 1262]  `.tool-chip-preview`
 ID: Quota Calc
 EN: Quota Calc
 
-#### [HTML baris 1265]  `.tool-chip-preview`
+#### [HTML baris 1266]  `.tool-chip-preview`
 ID: Converter
 EN: Converter
 
-#### [HTML baris 1269]  `.tool-chip-preview`
+#### [HTML baris 1270]  `.tool-chip-preview`
 ID: Net Speed
 EN: Net Speed
 
-#### [HTML baris 1292]  `.tools-pill-info`
+#### [HTML baris 1293]  `.tools-pill-info`
 ID: Kumpulan Utilitas Praktis
 EN: Kumpulan Utilitas Praktis
 
@@ -565,7 +569,7 @@ EN: Android Utility
 ID: UtilitasKu
 EN: UtilitasKu
 
-#### [HTML baris 1313]  `.highlight-cyan`
+#### [HTML baris 1314]  `.highlight-cyan`
 ID: ARS DEV
 EN: ARS DEV
 
@@ -573,23 +577,23 @@ EN: ARS DEV
 ID: Aplikasi Android serbaguna berisi 50 alat bantu seperti downloader dan file manager. Dibuat agar pengguna tidak perlu memasang banyak aplikasi terpisah.
 EN: An all-in-one Android app with 50 tools such as a downloader and file manager, so users no longer need to install many separate apps.
 
-#### [HTML baris 1325]  `.project-tag`
+#### [HTML baris 1326]  `.project-tag`
 ID: Aplikasi Android
 EN: Aplikasi Android
 
-#### [HTML baris 1327]  `.project-tag`
+#### [HTML baris 1328]  `.project-tag`
 ID: Flutter & Dart
 EN: Flutter & Dart
 
-#### [HTML baris 1328]  `.project-tag`
+#### [HTML baris 1329]  `.project-tag`
 ID: Kalkulator Eco Enzyme
 EN: Kalkulator Eco Enzyme
 
-#### [HTML baris 1329]  `.project-tag`
+#### [HTML baris 1330]  `.project-tag`
 ID: Estimasi Kuota
 EN: Estimasi Kuota
 
-#### [HTML baris 1330]  `.project-tag`
+#### [HTML baris 1331]  `.project-tag`
 ID: Offline-First
 EN: Offline-First
 
@@ -706,11 +710,11 @@ EN: Get in Touch
 ID: Silakan hubungi melalui salah satu saluran berikut jika ada proyek atau hal yang ingin didiskusikan.
 EN: Feel free to reach out through any of the channels below to discuss projects or inquiries.
 
-#### [HTML baris 1646]  `.contact-card-title`
+#### [HTML baris 1647]  `.contact-card-title`
 ID: Saluran Komunikasi Langsung
 EN: Saluran Komunikasi Langsung
 
-#### [HTML baris 1675]  `.channel-info`
+#### [HTML baris 1676]  `.channel-info`
 ID: WhatsApp (+62 822-8241-8992)
 EN: WhatsApp (+62 822-8241-8992)
 
@@ -718,7 +722,7 @@ EN: WhatsApp (+62 822-8241-8992)
 ID: Kontak langsung untuk diskusi proyek atau pertanyaan cepat.
 EN: Direct contact for project inquiries or quick questions.
 
-#### [HTML baris 1709]  `.channel-info`
+#### [HTML baris 1710]  `.channel-info`
 ID: Email (ardi.rs@gmail.com)
 EN: Email (ardi.rs@gmail.com)
 
@@ -726,7 +730,7 @@ EN: Email (ardi.rs@gmail.com)
 ID: Untuk penawaran formal atau kebutuhan kerja sama.
 EN: For formal proposals or project requirements.
 
-#### [HTML baris 1736]  `.channel-info`
+#### [HTML baris 1737]  `.channel-info`
 ID: GitHub (@ardirsaputra)
 EN: GitHub (@ardirsaputra)
 
@@ -742,7 +746,7 @@ EN: Quick Message
 ID: Nama Anda
 EN: Your Name
 
-#### [HTML baris 1782]  `.quick-message-form`
+#### [HTML baris 1783]  `.quick-message-form`
 ID: Pesan Anda
 EN: Pesan Anda
 
@@ -760,10 +764,6 @@ EN: Send via Email
 #### footer_copy  [2 bahasa]  `.container.footer-content`
 ID: © 2026 Ardi Ragil Saputra (Ars Dev). All rights reserved.
 EN: © 2026 Ardi Ragil Saputra (Ars Dev). All rights reserved.
-
-#### footer_motto  [2 bahasa]  `.container.footer-content`
-ID: Ardi Ragil Saputra • Mobile & Web Developer
-EN: Ardi Ragil Saputra • Mobile & Web Developer
 
 
 ## PLACEHOLDER FORM (tulisan abu-abu di dalam kotak isian)
@@ -807,6 +807,10 @@ EN: Community & Tech Talks
 #### proj_seminar_desc  [2 bahasa]  `tidak dipakai`
 ID: Dokumentasi kegiatan berbagi materi seputar dasar pengembangan aplikasi mobile dan Flutter.
 EN: Documentation of knowledge sharing sessions on mobile development fundamentals and Flutter.
+
+#### footer_motto  [2 bahasa]  `tidak dipakai`
+ID: Ardi Ragil Saputra • Mobile & Web Developer
+EN: Ardi Ragil Saputra • Mobile & Web Developer
 
 
 ## DATA TIMELINE PROYEK
@@ -1287,15 +1291,15 @@ https://www.instagram.com/ardirsaputra
 #### [HTML baris 355] - HERO (bagian paling atas)
 https://www.fiverr.com/ardirs?public_mode=true
 
-#### [HTML baris 968] - DAFTAR PROYEK
+#### [HTML baris 969] - DAFTAR PROYEK
 https://play.google.com/store/apps/details?id=id.co.waykanankab.siapkerja&hl=id
 
-#### [HTML baris 1098] - DAFTAR PROYEK
+#### [HTML baris 1099] - DAFTAR PROYEK
 https://bumkpujodadibersatu.com
 
-#### [HTML baris 1210] - DAFTAR PROYEK
+#### [HTML baris 1211] - DAFTAR PROYEK
 https://mabarasik.com
 
-#### [HTML baris 1333] - DAFTAR PROYEK
+#### [HTML baris 1334] - DAFTAR PROYEK
 https://arstore-dev.vercel.app/download
 
