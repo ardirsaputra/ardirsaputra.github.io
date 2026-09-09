@@ -123,6 +123,7 @@
         en: "A mobile attendance application for organizational needs and attendance records.",
       },
       stack: ["Flutter", "Android", "GPS"],
+      link: "https://play.google.com/store/apps/details?id=id.co.waykanankab.siapkerja&hl=id",
     },
     {
       marker: "2024",
@@ -134,7 +135,7 @@
         id: "Sistem presensi pegawai untuk Pemerintah Kabupaten Lampung Timur.",
         en: "Employee attendance system for the Lampung Timur regency government.",
       },
-      stack: [],
+      stack: ["Flutter", "Laravel"],
     },
     {
       marker: "2024",
@@ -175,6 +176,7 @@
         en: "An all-in-one app with 50 tools such as a downloader and file manager, built so users no longer need to install many separate apps.",
       },
       stack: ["Flutter", "Dart", "Android"],
+      link: "https://arstore-dev.vercel.app/download",
     },
     {
       marker: "2026",
@@ -206,7 +208,8 @@
 
       hero_greeting: "Halo, saya Ardi Ragil Saputra",
       hero_role: "Mobile & Web Developer",
-      hero_lead: "Pengembang aplikasi mobile dan website. Berpengalaman mengerjakan aplikasi mobile SiapKerja Way Kanan di Google Play Store dan server laravel, website pengelolaan keuangan desa BUMK (bumkpujodadibersatu.com), platform game online mabarasik.com, dan aplikasi Utilitasku Android Tools All in One.",
+      hero_lead:
+        "Pengembang aplikasi mobile dan website. Berpengalaman mengerjakan aplikasi mobile SiapKerja Way Kanan di Google Play Store dan server laravel, website pengelolaan keuangan desa BUMK (bumkpujodadibersatu.com), platform game online mabarasik.com, dan aplikasi Utilitasku Android Tools All in One.",
       hero_btn_projects: "Lihat Proyek",
       hero_btn_wa: "Chat WhatsApp",
       hero_btn_cv: "Kirim Email",
@@ -216,7 +219,8 @@
       metric_clean: "Android & Web Stack",
 
       profile_role_badge: "Mobile & Web Developer",
-      profile_summary: "Fokus pada pengembangan aplikasi Android, Flutter dan sistem web yang fungsional.",
+      profile_summary:
+        "Fokus pada pengembangan aplikasi Android, Flutter dan sistem web yang fungsional.",
       chip_flutter: "Flutter, Dart & Android",
       chip_location: "Lampung, Indonesia",
       author_location: "📍 Lampung, Indonesia",
@@ -224,9 +228,12 @@
       // About
       about_tag: "Tentang Saya",
       about_title: "Pengembangan Aplikasi Mobile & Web",
-      about_lead: "Fokus pada pembuatan aplikasi yang fungsional, terstruktur, optimal dan nyaman digunakan.",
-      about_p1: "Saya mengembangkan aplikasi mobile dan website untuk berbagai kebutuhan, mulai dari aplikasi presensi pegawai SiapKerja Pemkab Way Kanan di Google Play Store, sistem website pengelolaan keuangan BUMK (seperti bumkpujodadibersatu.com), website game online mabarasik.com, hingga aplikasi utilitasku Android Tools All in One. Setiap proyek dikerjakan dengan struktur kode yang rapi agar mudah dirawat.",
-      about_p2: "Di luar pekerjaan, saya menikmati musik dan dunia audio, menonton film, bersepeda, serta bermain game strategi.",
+      about_lead:
+        "Fokus pada pembuatan aplikasi yang fungsional, terstruktur, optimal dan nyaman digunakan.",
+      about_p1:
+        "Saya mengembangkan aplikasi mobile dan website untuk berbagai kebutuhan, mulai dari aplikasi presensi pegawai SiapKerja Pemkab Way Kanan di Google Play Store, sistem website pengelolaan keuangan BUMK (seperti bumkpujodadibersatu.com), website game online mabarasik.com, hingga aplikasi utilitasku Android Tools All in One. Setiap proyek dikerjakan dengan struktur kode yang rapi agar mudah dirawat.",
+      about_p2:
+        "Di luar pekerjaan, saya menikmati musik dan dunia audio, menonton film, bersepeda, serta bermain game strategi.",
       passion_gaming: "Game Strategi",
       passion_music: "Mendengarkan Musik",
       passion_movie: "Menonton Film",
@@ -286,7 +293,8 @@
 
       proj_tools_badge: "Utilitas Android",
       proj_tools_title: "UtilitasKu",
-      proj_tools_desc: "Aplikasi Android serbaguna berisi 50 alat bantu seperti downloader dan file manager. Dibuat agar pengguna tidak perlu memasang banyak aplikasi terpisah.",
+      proj_tools_desc:
+        "Aplikasi Android serbaguna berisi 50 alat bantu seperti downloader dan file manager. Dibuat agar pengguna tidak perlu memasang banyak aplikasi terpisah.",
 
       proj_play_badge: "Play Store",
       proj_play_title: "Google Play Store (Ars Dev)",
@@ -297,22 +305,22 @@
       proj_seminar_desc:
         "Dokumentasi kegiatan berbagi materi seputar dasar pengembangan aplikasi mobile dan Flutter.",
       proj_btn_github: "GitHub",
+      proj_btn_download: "Unduh Aplikasi",
       proj_btn_play: "Buka di Play Store",
       proj_btn_web: "Buka Website",
 
       timeline_tag: "Perjalanan",
       timeline_title: "Perjalanan Pendidikan & Karier",
-      timeline_sub: "Rangkuman pendidikan, pengalaman magang, dan proyek dari 2013 sampai sekarang.",
+      timeline_sub:
+        "Rangkuman pendidikan, pengalaman magang, dan proyek dari 2013 sampai sekarang.",
       timeline_hint: "Gulir untuk menelusuri perjalanan",
 
       // Interactive Lab
 
-
       // Workflow & Services
-      flow_tag: "Alur Kerja",
+      flow_tag: "Metode Agile",
       flow_title: "Tahapan Pengerjaan Proyek",
-      flow_sub:
-        "Langkah pengerjaan terstruktur dari diskusi awal hingga aplikasi siap digunakan.",
+      flow_sub: "Pengerjaan memakai metode Agile: dibagi menjadi tahap-tahap pendek yang hasilnya ditunjukkan dan dievaluasi bersama Anda, sehingga aplikasi yang jadi benar-benar sesuai kebutuhan.",
       step_1_title: "1. Diskusi Kebutuhan",
       step_1_desc:
         "Membahas tujuan proyek, alur fitur yang dibutuhkan, dan perkiraan waktu pengerjaan.",
@@ -320,11 +328,9 @@
       step_2_desc:
         "Menyusun rancangan antarmuka dan struktur data yang akan digunakan.",
       step_3_title: "3. Pengerjaan & Pengujian",
-      step_3_desc:
-        "Penulisan kode program, integrasi fungsi, dan pengujian untuk memastikan aplikasi berjalan baik.",
+      step_3_desc: "Penulisan kode dan pengujian per iterasi. Setiap bagian yang selesai ditunjukkan lebih dulu supaya masukan bisa langsung diterapkan.",
       step_4_title: "4. Rilis & Pemeliharaan",
-      step_4_desc:
-        "Membantu proses unggah ke server/Play Store dan perbaikan jika dibutuhkan.",
+      step_4_desc: "Membantu proses unggah ke server atau Play Store, lalu masukan setelah pemakaian dijadikan bahan perbaikan berikutnya.",
 
       service_1_title: "Aplikasi Mobile",
       service_1_desc:
@@ -369,7 +375,7 @@
       hero_greeting: "Hello, I am Ardi Ragil Saputra",
       hero_role: "Mobile & Web Developer",
       hero_lead:
-        "Mobile and web developer. Experienced in developing the SiapKerja Way Kanan mobile app on Google Play Store, the village financial management web system for BUMK (bumkpujodadibersatu.com), the multiplayer platform mabarasik.com, and Android Tools All in One.",
+        "Mobile and web developer. Experienced in developing the SiapKerja Way Kanan mobile app on Google Play Store, the village financial management web system for BUMK (bumkpujodadibersatu.com), the multiplayer platform mabarasik.com, and Utilitasku Android Tools All in One.",
       hero_btn_projects: "View Projects",
       hero_btn_wa: "WhatsApp",
       hero_btn_cv: "Send Email",
@@ -379,7 +385,8 @@
       metric_clean: "Android & Web Stack",
 
       profile_role_badge: "Mobile & Web Developer",
-      profile_summary: "Focused on developing functional Android, Flutter and web applications.",
+      profile_summary:
+        "Focused on developing functional Android, Flutter and web applications.",
       chip_flutter: "Flutter, Dart & Android",
       chip_location: "Lampung, Indonesia",
       author_location: "📍 Lampung, Indonesia",
@@ -391,7 +398,8 @@
         "Focused on building functional, structured, and user-friendly software.",
       about_p1:
         "I build mobile apps and websites for various needs, from the civil servant attendance app for Pemkab Way Kanan on Google Play Store, the village enterprise financial management web system for BUMK (such as bumkpujodadibersatu.com), the online game site mabarasik.com, to Android utility tools. Every project is built with clean structure for long-term maintainability.",
-      about_p2: "Outside of work, I enjoy music and audio gear, watching movies, cycling, and playing strategy games.",
+      about_p2:
+        "Outside of work, I enjoy music and audio gear, watching movies, cycling, and playing strategy games.",
       passion_gaming: "Strategy Games",
       passion_music: "Listening to Music",
       passion_movie: "Watching Movies",
@@ -450,7 +458,8 @@
 
       proj_tools_badge: "Android Utility",
       proj_tools_title: "UtilitasKu",
-      proj_tools_desc: "An all-in-one Android app with 50 tools such as a downloader and file manager, so users no longer need to install many separate apps.",
+      proj_tools_desc:
+        "An all-in-one Android app with 50 tools such as a downloader and file manager, so users no longer need to install many separate apps.",
 
       proj_play_badge: "Play Store",
       proj_play_title: "Google Play Store (Ars Dev)",
@@ -461,21 +470,22 @@
       proj_seminar_desc:
         "Documentation of knowledge sharing sessions on mobile development fundamentals and Flutter.",
       proj_btn_github: "GitHub",
+      proj_btn_download: "Download App",
       proj_btn_play: "Open in Play Store",
       proj_btn_web: "Visit Website",
 
       timeline_tag: "Journey",
       timeline_title: "Education & Career Journey",
-      timeline_sub: "A summary of education, internships, and projects from 2013 until now.",
+      timeline_sub:
+        "A summary of education, internships, and projects from 2013 until now.",
       timeline_hint: "Scroll to move through the journey",
 
       // Interactive Lab
 
-
       // Workflow & Services
-      flow_tag: "Workflow",
+      flow_tag: "Agile Method",
       flow_title: "Project Development Steps",
-      flow_sub: "Structured development process from planning to release.",
+      flow_sub: "Built the Agile way: work is split into short iterations that are demoed and reviewed with you, so the finished app matches what you actually need.",
       step_1_title: "1. Requirements Discussion",
       step_1_desc:
         "Discussing project goals, feature requirements, and timeline expectations.",
@@ -483,11 +493,9 @@
       step_2_desc:
         "Designing user interfaces and planning the data structures to be used.",
       step_3_title: "3. Development & Testing",
-      step_3_desc:
-        "Writing code, integrating features, and testing to ensure reliability.",
+      step_3_desc: "Writing and testing code per iteration. Each finished piece is demoed first so your feedback can be applied right away.",
       step_4_title: "4. Release & Support",
-      step_4_desc:
-        "Assisting with server or Play Store deployment and subsequent updates.",
+      step_4_desc: "Assisting with server or Play Store deployment, then turning real usage feedback into the next round of improvements.",
 
       service_1_title: "Mobile Apps",
       service_1_desc:
@@ -707,7 +715,8 @@
       const last = track.lastElementChild;
       if (!last) return 0;
 
-      const padLeft = parseFloat(window.getComputedStyle(track).paddingLeft) || 0;
+      const padLeft =
+        parseFloat(window.getComputedStyle(track).paddingLeft) || 0;
       const spacer = track.querySelector(".timeline-spacer");
       if (spacer) spacer.style.flexBasis = padLeft + "px";
 
@@ -716,8 +725,12 @@
 
     function update() {
       if (distance <= 0) return;
-      const offset = Math.min(1, Math.max(0, -wrap.getBoundingClientRect().top / distance));
-      track.style.transform = "translate3d(" + -(offset * distance) + "px, 0, 0)";
+      const offset = Math.min(
+        1,
+        Math.max(0, -wrap.getBoundingClientRect().top / distance),
+      );
+      track.style.transform =
+        "translate3d(" + -(offset * distance) + "px, 0, 0)";
       if (bar) bar.style.transform = "scaleX(" + offset + ")";
     }
 
@@ -734,7 +747,8 @@
       document.body.classList.remove("timeline-static");
       track.style.transform = "translate3d(0, 0, 0)";
       distance = Math.max(0, trackWidth() - viewport.clientWidth);
-      wrap.style.height = distance > 0 ? window.innerHeight + distance + "px" : "";
+      wrap.style.height =
+        distance > 0 ? window.innerHeight + distance + "px" : "";
       update();
     }
 
