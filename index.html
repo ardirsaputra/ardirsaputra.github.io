@@ -1,38 +1,1116 @@
 <!DOCTYPE html>
-<html>
+<html lang="id" data-theme="light">
 <head>
-  <!--
-    If you are serving your web app in a path other than the root, change the
-    href value below to reflect the base path you are serving from.
-
-    The path provided below has to start and end with a slash "/" in order for
-    it to work correctly.
-
-    For more details:
-    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
-
-    This is a placeholder for base href that will be replaced by the value of
-    the `--base-href` argument provided to `flutter build`.
-  -->
-  <base href="/">
-
   <meta charset="UTF-8">
-  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-  <meta name="description" content="Ardi Ragil Saputra Portofolio">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 
-  <!-- iOS meta tags & icons -->
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="Ardi Ragil Saputra Portofolio">
-  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+  <!-- Primary Meta Tags -->
+  <title>Ardi Ragil Saputra | Mobile & Web Developer</title>
+  <meta name="title" content="Ardi Ragil Saputra | Mobile & Web Developer">
+  <meta name="description" content="Portofolio resmi Ardi Ragil Saputra (Ars Dev). Pengembang aplikasi mobile Android / Flutter dan website (SiapKerja Way Kanan, BUMK Keuangan Desa, mabarasik.com).">
+  <meta name="keywords" content="Ardi Ragil Saputra, Ars Dev, Flutter Developer, Android Developer, Mobile Engineer Indonesia, SiapKerja Way Kanan, BUMK Pujodadi Bersatu, bumkpujodadibersatu.com, Keuangan Desa, mabarasik.com, Android Tools, Web Developer">
+  <meta name="author" content="Ardi Ragil Saputra">
+  <meta name="theme-color" content="#f8fafc" id="theme-color-meta">
 
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="favicon.png"/>
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ardirsaputra.github.io/">
+  <meta property="og:title" content="Ardi Ragil Saputra | Mobile & Web Developer">
+  <meta property="og:description" content="Portofolio dan proyek aplikasi mobile serta web oleh Ardi Ragil Saputra (Ars Dev).">
+  <meta property="og:image" content="assets/arsdev.png">
 
-  <title>portofolio</title>
-  <link rel="manifest" href="manifest.json">
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://ardirsaputra.github.io/">
+  <meta property="twitter:title" content="Ardi Ragil Saputra | Mobile & Web Developer">
+  <meta property="twitter:description" content="Portofolio dan proyek aplikasi mobile serta web oleh Ardi Ragil Saputra (Ars Dev).">
+  <meta property="twitter:image" content="assets/arsdev.png">
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="apple-touch-icon" href="apple-icon.png">
+
+  <!-- Google Fonts: Plus Jakarta Sans, Inter, JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <script src="flutter_bootstrap.js" async></script>
+
+  <!-- =========================================================================
+       NAVIGATION BAR (Ultra-Compact Floating Island)
+       ========================================================================= -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo" aria-label="Ars Dev Home">
+        <div class="logo-badge">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="16 18 22 12 16 6"></polyline>
+            <polyline points="8 6 2 12 8 18"></polyline>
+          </svg>
+        </div>
+        <span class="logo-text">ARS<span>.DEV</span></span>
+      </a>
+
+      <nav>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#about" class="nav-link" data-i18n="nav_about">Tentang</a></li>
+          <li><a href="#skills" class="nav-link" data-i18n="nav_skills">Keahlian</a></li>
+          <li><a href="#projects" class="nav-link" data-i18n="nav_projects">Proyek</a></li>
+          <li><a href="#lab" class="nav-link" data-i18n="nav_lab">Lab</a></li>
+          <li><a href="#contact" class="nav-link" data-i18n="nav_contact">Kontak</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-controls">
+        <!-- Theme Toggle Button (Light/Dark Mode, Default: Light) -->
+        <button id="theme-toggle-btn" class="theme-btn" title="Ganti Tema (Terang / Gelap)" aria-label="Ganti Tema">
+          <span id="theme-btn-icon">🌙</span>
+        </button>
+
+        <!-- Compact Language Switcher -->
+        <button id="lang-toggle-btn" class="lang-btn" title="Ganti Bahasa / Change Language" aria-label="Ganti Bahasa">
+          <span id="lang-btn-text">ID</span>
+        </button>
+
+        <!-- Compact Subtle CTA Button -->
+        <a href="https://wa.me/6282282418992" target="_blank" rel="noopener noreferrer" class="nav-cta-btn" title="WhatsApp">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+          </svg>
+          <span data-i18n="nav_cta">WhatsApp</span>
+        </a>
+
+        <!-- Mobile Menu Toggle -->
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Menu" title="Menu">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- =========================================================================
+         HERO SECTION (Clean, Grounded, & Professional)
+         ========================================================================= -->
+    <section class="section hero-section" id="hero">
+      <div class="container">
+        <div class="hero-grid">
+          <!-- Hero Text -->
+          <div class="hero-content">
+            <div class="status-pill">
+              <span class="time-pulse"></span>
+              <span data-i18n="status_available">Tersedia untuk Proyek Baru</span>
+            </div>
+
+            <h1 class="hero-title">
+              <span data-i18n="hero_greeting">Halo, saya Ardi Ragil Saputra</span>
+              <br><span class="highlight-amber" data-i18n="hero_role">Mobile & Web Developer</span>
+            </h1>
+
+            <p class="hero-lead" data-i18n="hero_lead">
+              Pengembang aplikasi mobile dan website. Berpengalaman mengerjakan aplikasi mobile SiapKerja Way Kanan di Google Play Store, website pengelolaan keuangan desa BUMK (bumkpujodadibersatu.com), platform game online mabarasik.com, dan aplikasi utilitas Android Tools All in One.
+            </p>
+
+            <div class="hero-actions">
+              <a href="#projects" class="btn-primary">
+                <span data-i18n="hero_btn_projects">Lihat Proyek</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+
+              <a href="https://wa.me/6282282418992" target="_blank" rel="noopener noreferrer" class="btn-secondary">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                  </svg>
+                  <span data-i18n="hero_btn_wa">WhatsApp</span>
+                </a>
+
+                <a href="mailto:fluzzzer@gmail.com" class="btn-secondary">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                  <span data-i18n="hero_btn_cv">Kirim Email</span>
+                </a>
+              </div>
+
+              <!-- Social Links Strip -->
+              <div class="hero-socials">
+                <a href="https://github.com/ardirsaputra" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="GitHub">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                  </svg>
+                </a>
+
+                <a href="https://www.linkedin.com/in/ardi-rs/" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="LinkedIn">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                  </svg>
+                </a>
+
+                <a href="https://twitter.com/ardirsaputra" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="X / Twitter">
+                  <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                  </svg>
+                </a>
+
+                <a href="https://www.instagram.com/ardirsaputra" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="Instagram">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                  </svg>
+                </a>
+
+                <a href="https://www.fiverr.com/ardirs?public_mode=true" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="Fiverr Profile">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                    <circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2"/>
+                    <text x="12" y="16" font-size="12" font-weight="bold" text-anchor="middle" fill="currentColor">fi</text>
+                  </svg>
+                </a>
+              </div>
+
+              <!-- Metrics Strip -->
+              <div class="hero-metrics">
+                <div class="metric-item">
+                  <span class="metric-number highlight-amber">5+</span>
+                  <span class="metric-label" data-i18n="metric_exp">Tahun Pengalaman</span>
+                </div>
+                <div class="metric-item">
+                  <span class="metric-number highlight-cyan">10+</span>
+                  <span class="metric-label" data-i18n="metric_apps">Proyek Aplikasi & Web</span>
+                </div>
+                <div class="metric-item">
+                  <span class="metric-number" style="color: #10b981; font-size: 1.4rem; padding-top: 6px;">Android & Web</span>
+                  <span class="metric-label" data-i18n="metric_clean">Stack Teknologi</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Hero Visual Card -->
+            <div class="hero-visual">
+              <div class="profile-card">
+                <div class="profile-avatar-container">
+                  <div class="profile-avatar-glow"></div>
+                  <div class="profile-avatar">
+                    <img src="assets/ardi_profile.jpg" onerror="this.onerror=null; this.src='assets/ars_rmbg.png';" alt="Ardi Ragil Saputra" width="156" height="156">
+                  </div>
+                </div>
+
+                <div class="profile-meta">
+                  <h3 class="profile-name">Ardi Ragil Saputra</h3>
+                  <span class="profile-badge-role" data-i18n="profile_role_badge">Mobile & Web Developer</span>
+                  <p class="profile-summary" data-i18n="profile_summary">
+                    Fokus pada pengembangan aplikasi Android, Flutter, dan sistem web yang fungsional.
+                  </p>
+                </div>
+
+                <!-- Floating Chips -->
+                <div style="display: flex; flex-direction: column; gap: 10px;">
+                  <div class="floating-chip">
+                    <div class="chip-icon">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                        <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                        <polyline points="2 17 12 22 22 17"></polyline>
+                        <polyline points="2 12 12 17 22 12"></polyline>
+                      </svg>
+                    </div>
+                    <span data-i18n="chip_flutter">Flutter, Dart & Android</span>
+                  </div>
+
+                  <div class="floating-chip">
+                    <div class="chip-icon" style="background: rgba(6, 182, 212, 0.15); color: var(--accent-cyan);">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                        <circle cx="12" cy="10" r="3"></circle>
+                      </svg>
+                    </div>
+                    <span data-i18n="chip_location">Lampung, Indonesia</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================================================================
+           ABOUT SECTION (Grounded & Clear)
+           ========================================================================= -->
+      <section class="section" id="about">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-tag" data-i18n="about_tag">Tentang Saya</span>
+            <h2 class="section-title" data-i18n="about_title">Pengembangan Aplikasi Mobile & Web</h2>
+            <p class="section-subtitle" data-i18n="about_lead">
+              Fokus pada pembuatan aplikasi yang fungsional, terstruktur, dan nyaman digunakan.
+            </p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Story Details -->
+          <div class="glass-card story-card">
+            <div class="about-author-header">
+              <img src="assets/ardi_profile.jpg" onerror="this.onerror=null; this.src='assets/ars_rmbg.png';" alt="Ardi Ragil Saputra" class="about-author-photo">
+              <div>
+                <h3 class="about-author-name">Ardi Ragil Saputra</h3>
+                <span class="about-author-meta" data-i18n="author_location">📍 Lampung, Indonesia</span>
+              </div>
+            </div>
+
+            <p class="story-lead" data-i18n="about_p1">
+              Saya mengembangkan aplikasi mobile dan website untuk berbagai kebutuhan, mulai dari aplikasi presensi pegawai SiapKerja Pemkab Way Kanan di Google Play Store, sistem website pengelolaan keuangan desa BUMK (seperti bumkpujodadibersatu.com), website game online mabarasik.com, hingga aplikasi utilitas Android Tools All in One. Setiap proyek dikerjakan dengan struktur kode yang rapi agar mudah dirawat.
+            </p>
+            <p class="story-body" data-i18n="about_p2">
+              Di luar aktivitas coding, saya tertarik dengan budaya Jepang, traveling, dan game strategi.
+            </p>
+
+            <div class="personal-passions">
+              <div class="passion-box">
+                <span class="passion-emoji">🎮</span>
+                <span class="passion-title" data-i18n="passion_gaming">Gaming & Strategi</span>
+              </div>
+              <div class="passion-box">
+                <span class="passion-emoji">⛩️</span>
+                <span class="passion-title" data-i18n="passion_japan">Budaya Jepang</span>
+              </div>
+              <div class="passion-box">
+                <span class="passion-emoji">🧭</span>
+                <span class="passion-title" data-i18n="passion_travel">Traveling</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Philosophy Grid -->
+          <div class="philosophy-grid">
+            <div class="phil-card">
+              <div class="phil-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                </svg>
+              </div>
+              <div>
+                <h4 class="phil-title" data-i18n="phil_title_1">Struktur Kode Rapi</h4>
+                <p class="phil-desc" data-i18n="phil_desc_1">Menerapkan struktur kode yang teratur dan teruji agar aplikasi stabil dan mudah dikembangkan.</p>
+              </div>
+            </div>
+
+            <div class="phil-card cyan">
+              <div class="phil-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <path d="M8 14s1.5 2 4 2 4-2 4-2"></path>
+                  <line x1="9" y1="9" x2="9.01" y2="9"></line>
+                  <line x1="15" y1="9" x2="15.01" y2="9"></line>
+                </svg>
+              </div>
+              <div>
+                <h4 class="phil-title" data-i18n="phil_title_2">Tampilan Jelas & Responsif</h4>
+                <p class="phil-desc" data-i18n="phil_desc_2">Memastikan antarmuka aplikasi mudah dipahami dan nyaman digunakan di berbagai ukuran layar.</p>
+              </div>
+            </div>
+
+            <div class="phil-card emerald">
+              <div class="phil-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+                  <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+                </svg>
+              </div>
+              <div>
+                <h4 class="phil-title" data-i18n="phil_title_3">Pengembangan Berkelanjutan</h4>
+                <p class="phil-desc" data-i18n="phil_desc_3">Terus memperbarui wawasan teknis dan menyesuaikan solusi dengan kebutuhan nyata proyek.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         SKILLS & TECH (Keahlian)
+         ========================================================================= -->
+    <section class="section" id="skills" style="background: rgba(14, 20, 34, 0.4);">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag tag-cyan" data-i18n="skills_tag">Keahlian</span>
+          <h2 class="section-title" data-i18n="skills_title">Teknologi yang Digunakan</h2>
+          <p class="section-subtitle" data-i18n="skills_sub">
+            Daftar teknologi dan alat bantu yang saya gunakan dalam pengembangan perangkat lunak.
+          </p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Mobile Engineering -->
+          <div class="glass-card skill-category-card">
+            <div class="skill-card-header">
+              <div class="skill-cat-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+                  <line x1="12" y1="18" x2="12.01" y2="18"></line>
+                </svg>
+              </div>
+              <div>
+                <h3 class="skill-cat-title" data-i18n="cat_mobile">Pengembangan Mobile</h3>
+                <p class="skill-cat-desc" data-i18n="cat_mobile_desc">Aplikasi Android & iOS yang mulus, responsif, dan berkinerja tinggi.</p>
+              </div>
+            </div>
+
+            <div class="skill-pills-wrap">
+              <span class="tech-pill primary-pill">Flutter</span>
+              <span class="tech-pill primary-pill">Dart</span>
+              <span class="tech-pill">Android Native (Kotlin/Java)</span>
+              <span class="tech-pill">Bloc & Cubit</span>
+              <span class="tech-pill">Provider & Riverpod</span>
+              <span class="tech-pill">Material 3 & Cupertino</span>
+              <span class="tech-pill">Offline First & SQLite</span>
+            </div>
+          </div>
+
+          <!-- Backend & Database -->
+          <div class="glass-card skill-category-card">
+            <div class="skill-card-header">
+              <div class="skill-cat-icon" style="background: rgba(6, 182, 212, 0.12); color: var(--accent-cyan);">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                  <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                  <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="skill-cat-title" data-i18n="cat_backend">Backend & Database</h3>
+                <p class="skill-cat-desc" data-i18n="cat_backend_desc">API yang cepat, skalabel, serta manajemen basis data yang aman.</p>
+              </div>
+            </div>
+
+            <div class="skill-pills-wrap">
+              <span class="tech-pill cyan-pill">Firebase Auth & Firestore</span>
+              <span class="tech-pill cyan-pill">Node.js / Express</span>
+              <span class="tech-pill">Laravel (PHP)</span>
+              <span class="tech-pill">PostgreSQL</span>
+              <span class="tech-pill">MySQL</span>
+              <span class="tech-pill">RESTful API Design</span>
+              <span class="tech-pill">JSON & WebSockets</span>
+            </div>
+          </div>
+
+          <!-- Architecture & Tools -->
+          <div class="glass-card skill-category-card">
+            <div class="skill-card-header">
+              <div class="skill-cat-icon" style="background: rgba(16, 185, 129, 0.12); color: var(--accent-emerald);">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                </svg>
+              </div>
+              <div>
+                <h3 class="skill-cat-title" data-i18n="cat_tools">Arsitektur & Alat Kerja</h3>
+                <p class="skill-cat-desc" data-i18n="cat_tools_desc">Praktik rekayasa modern untuk hasil produksi standar industri.</p>
+              </div>
+            </div>
+
+            <div class="skill-pills-wrap">
+              <span class="tech-pill" style="color: #6ee7b7; border-color: rgba(16, 185, 129, 0.3);">Clean Architecture</span>
+              <span class="tech-pill">Git & GitHub</span>
+              <span class="tech-pill">Figma (UI/UX)</span>
+              <span class="tech-pill">Postman API Testing</span>
+              <span class="tech-pill">Google Play Console</span>
+              <span class="tech-pill">CI/CD Pipeline</span>
+              <span class="tech-pill">Performance Profiling</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         FEATURED PROJECTS & SHOWCASE
+         ========================================================================= -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag" data-i18n="proj_tag">Portofolio</span>
+          <h2 class="section-title" data-i18n="proj_title">Daftar Proyek</h2>
+          <p class="section-subtitle" data-i18n="proj_sub">
+            Aplikasi mobile dan sistem web yang pernah saya buat dan kelola.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1: SiapKerja Way Kanan (Mobile Play Store) -->
+          <div class="project-card">
+            <div class="project-graphic-banner banner-siapkerja">
+              <div class="siapkerja-radar">
+                <div class="siapkerja-radar-dot"></div>
+              </div>
+              <div class="banner-pill-info">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                </svg>
+                <span>GPS Geofencing & Swafoto</span>
+              </div>
+              <span class="project-badge-tag" style="color: #6ee7b7; border-color: rgba(16, 185, 129, 0.4);" data-i18n="proj_siapkerja_badge">Mobile App di Play Store</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">
+                <span data-i18n="proj_siapkerja_title">SiapKerja Way Kanan (Mobile Presensi ASN)</span>
+                <span class="highlight-cyan" style="font-size: 0.85rem; font-family: var(--font-mono);">Google Play</span>
+              </h3>
+              <p class="project-desc" data-i18n="proj_siapkerja_desc">
+                Aplikasi mobile presensi pegawai ASN di lingkungan Pemkab Way Kanan yang tersedia di Google Play Store. Dilengkapi fitur presensi berbasis GPS geofencing, verifikasi swafoto, dan pencatatan waktu kehadiran.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag" style="color: #6ee7b7; border-color: rgba(16, 185, 129, 0.3);">Google Play Store</span>
+                <span class="project-tag">Flutter & Android</span>
+                <span class="project-tag">GPS Geofencing</span>
+                <span class="project-tag">Swafoto Kehadiran</span>
+                <span class="project-tag">Presensi ASN</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://play.google.com/store/search?q=siapkerja+waykanan&c=apps" target="_blank" rel="noopener noreferrer" class="project-link-btn" style="color: #6ee7b7;">
+                  <span data-i18n="proj_btn_play">Buka di Google Play</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M3.609 1.814L13.792 12 3.61 22.186a1.996 1.996 0 0 1-.61-.914V2.728c.15-.36.368-.678.609-.914zM15.207 13.414l2.677 2.678-12.871 7.377 10.194-10.055zm0-2.828L5.013.53l12.871 7.378-2.677 2.678zm1.414 1.414l3.195 1.832c.983.564.983 1.48 0 2.044l-3.195 1.832-2.122-2.122 2.122-2.122z"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2: BUMK Pengelolaan Keuangan Desa (bumkpujodadibersatu.com) -->
+          <div class="project-card">
+            <div class="project-graphic-banner banner-bumk">
+              <div class="bumk-stat-grid">
+                <div class="bumk-stat-chip">
+                  <div class="bumk-stat-icon">🏛️</div>
+                  <div>
+                    <div style="font-size: 0.7rem; color: #a7f3d0; font-family: var(--font-mono);">BUMK Desa</div>
+                    <div style="font-weight: 700; font-size: 0.88rem;">Pujodadi Bersatu</div>
+                  </div>
+                </div>
+                <div class="bumk-stat-chip">
+                  <div class="bumk-stat-icon">📊</div>
+                  <div>
+                    <div style="font-size: 0.7rem; color: #a7f3d0; font-family: var(--font-mono);">Tata Kelola</div>
+                    <div style="font-weight: 700; font-size: 0.88rem;">Keuangan Desa</div>
+                  </div>
+                </div>
+              </div>
+              <div class="bumk-pill-info">
+                <span class="time-pulse" style="background: #10b981; box-shadow: 0 0 10px #10b981;"></span>
+                <span>Pengelolaan Keuangan Per Desa</span>
+              </div>
+              <span class="project-badge-tag" style="color: #6ee7b7; border-color: rgba(16, 185, 129, 0.4);" data-i18n="proj_bumk_badge">Website BUMK & Keuangan Desa</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">
+                <span data-i18n="proj_bumk_title">BUMK Pengelolaan Keuangan Desa</span>
+                <span style="color: #34d399; font-size: 0.85rem; font-family: var(--font-mono);">bumkpujodadibersatu.com</span>
+              </h3>
+              <p class="project-desc" data-i18n="proj_bumk_desc">
+                Website sistem informasi dan tata kelola keuangan Badan Usaha Milik Kampung/Desa (BUMK) untuk pencatatan unit usaha desa, pembukuan kas transparan, dan akuntabilitas pelaporan dana desa secara terbuka, dengan contoh nyata pada bumkpujodadibersatu.com.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag" style="color: #6ee7b7; border-color: rgba(16, 185, 129, 0.3);">bumkpujodadibersatu.com</span>
+                <span class="project-tag">Sistem Keuangan Desa</span>
+                <span class="project-tag">Laravel & PHP</span>
+                <span class="project-tag">Tailwind CSS</span>
+                <span class="project-tag">BUMDes / BUMK</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://bumkpujodadibersatu.com" target="_blank" rel="noopener noreferrer" class="project-link-btn" style="color: #34d399;">
+                  <span data-i18n="proj_btn_web">Kunjungi Website</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                    <polyline points="7 7 17 7 17 17"></polyline>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3: mabarasik.com (Multiplayer Board Games Platform) -->
+          <div class="project-card">
+            <div class="project-graphic-banner banner-mabarasik">
+              <div class="mabar-game-tiles">
+                <div class="mabar-tile">
+                  <span class="mabar-tile-emoji">🃏</span>
+                  <span>Taipan</span>
+                </div>
+                <div class="mabar-tile">
+                  <span class="mabar-tile-emoji">🎲</span>
+                  <span>Ludo</span>
+                </div>
+                <div class="mabar-tile">
+                  <span class="mabar-tile-emoji">🁓</span>
+                  <span>Gaple</span>
+                </div>
+                <div class="mabar-tile">
+                  <span class="mabar-tile-emoji">🪜</span>
+                  <span>Ular Tangga</span>
+                </div>
+              </div>
+              <div class="mabar-pill-info">
+                <span class="time-pulse" style="background: #c084fc; box-shadow: 0 0 10px #c084fc;"></span>
+                <span>Live Multiplayer WebSockets</span>
+              </div>
+              <span class="project-badge-tag" style="color: #c084fc; border-color: rgba(168, 85, 247, 0.4);" data-i18n="proj_mabar_badge">Platform Web Game</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">
+                <span data-i18n="proj_mabar_title">mabarasik.com (Online Board Games)</span>
+                <span style="color: #c084fc; font-size: 0.85rem; font-family: var(--font-mono);">mabarasik.com</span>
+              </h3>
+              <p class="project-desc" data-i18n="proj_mabar_desc">
+                Website game online multiplayer (mabarasik.com) yang dapat dimainkan langsung di browser. Menyediakan permainan papan seperti Taipan, Ludo, Domino Gaple, dan Ular Tangga dengan room undangan dan WebSockets.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag" style="color: #c084fc; border-color: rgba(168, 85, 247, 0.3);">mabarasik.com</span>
+                <span class="project-tag">Web App</span>
+                <span class="project-tag">WebSockets</span>
+                <span class="project-tag">Game Multiplayer</span>
+                <span class="project-tag">Responsive UI</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://mabarasik.com" target="_blank" rel="noopener noreferrer" class="project-link-btn" style="color: #c084fc;">
+                  <span data-i18n="proj_btn_web">Kunjungi Website</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                    <polyline points="7 7 17 7 17 17"></polyline>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3: Android Tools All in One -->
+          <div class="project-card">
+            <div class="project-graphic-banner banner-tools">
+              <div class="tools-grid-preview">
+                <div class="tool-chip-preview">
+                  <span>🌿</span>
+                  <b>Eco Calc</b>
+                </div>
+                <div class="tool-chip-preview">
+                  <span>📶</span>
+                  <b>Quota Calc</b>
+                </div>
+                <div class="tool-chip-preview">
+                  <span>⚖️</span>
+                  <b>Converter</b>
+                </div>
+                <div class="tool-chip-preview">
+                  <span>⚡</span>
+                  <b>Net Speed</b>
+                </div>
+              </div>
+              <div class="tools-pill-info">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                  <line x1="8" y1="21" x2="16" y2="21"></line>
+                  <line x1="12" y1="17" x2="12" y2="21"></line>
+                </svg>
+                <span>Kumpulan Utilitas Praktis</span>
+              </div>
+              <span class="project-badge-tag" style="color: var(--accent-cyan); border-color: rgba(6, 182, 212, 0.4);" data-i18n="proj_tools_badge">Utilitas Android</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">
+                <span data-i18n="proj_tools_title">Android Tools All in One</span>
+                <span class="highlight-cyan" style="font-size: 0.85rem; font-family: var(--font-mono);">ARS DEV</span>
+              </h3>
+              <p class="project-desc" data-i18n="proj_tools_desc">
+                Aplikasi utilitas Android yang mengumpulkan berbagai alat bantu praktis dalam satu tempat, termasuk kalkulator formula lingkungan, kalkulator kuota internet, dan pengonversi unit.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag" style="color: #67e8f9; border-color: rgba(6, 182, 212, 0.3);">Aplikasi Android</span>
+                <span class="project-tag">Flutter & Dart</span>
+                <span class="project-tag">Kalkulator Eco Enzyme</span>
+                <span class="project-tag">Estimasi Kuota</span>
+                <span class="project-tag">Offline-First</span>
+              </div>
+              <div class="project-actions">
+                <a href="#lab" class="project-link-btn" style="color: var(--accent-cyan);">
+                  <span data-i18n="proj_btn_view">Coba Demo di Lab</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                    <polyline points="7 7 17 7 17 17"></polyline>
+                  </svg>
+                </a>
+                <a href="https://github.com/ardirsaputra" target="_blank" rel="noopener noreferrer" class="project-link-btn" style="color: var(--text-secondary);">
+                  <span data-i18n="proj_btn_github">GitHub</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4: Eco Enzyme Calculator -->
+          <div class="project-card">
+            <div class="project-card-image-wrap">
+              <img src="eco-enzyme.jpg" alt="Kalkulator Eco Enzyme UI Screenshot">
+              <span class="project-badge-tag" data-i18n="proj_eco_badge">Utilitas Lingkungan</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">
+                <span data-i18n="proj_eco_title">Kalkulator Eco Enzyme</span>
+                <span class="highlight-amber">1:3:10</span>
+              </h3>
+              <p class="project-desc" data-i18n="proj_eco_desc">
+                Alat bantu hitung formula fermentasi eco enzyme dengan rasio standar 1 bagian gula : 3 bagian bahan organik : 10 bagian air.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">Flutter</span>
+                <span class="project-tag">Eco-Tech</span>
+                <span class="project-tag">Kalkulator Fermentasi</span>
+              </div>
+              <div class="project-actions">
+                <a href="#lab" class="project-link-btn">
+                  <span data-i18n="proj_btn_view">Coba Demo Interaktif</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                    <polyline points="7 7 17 7 17 17"></polyline>
+                  </svg>
+                </a>
+                <a href="https://github.com/ardirsaputra" target="_blank" rel="noopener noreferrer" class="project-link-btn" style="color: var(--text-secondary);">
+                  <span data-i18n="proj_btn_github">GitHub</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 5: Quota Internet Estimator -->
+          <div class="project-card">
+            <div class="project-card-image-wrap">
+              <img src="assets/koutainternet.jpg" alt="Kouta Internet Calculator UI Screenshot">
+              <span class="project-badge-tag" style="color: var(--accent-cyan);" data-i18n="proj_kouta_badge">Alat Bantu Kuota</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">
+                <span data-i18n="proj_kouta_title">Kalkulator Kuota Internet</span>
+                <span class="highlight-cyan">YouTube Video</span>
+              </h3>
+              <p class="project-desc" data-i18n="proj_kouta_desc">
+                Alat bantu estimasi pemakaian data saat menonton video berdasarkan resolusi dan durasi waktu.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">Flutter</span>
+                <span class="project-tag">Estimasi Bandwidth</span>
+                <span class="project-tag">Alat Bantu</span>
+              </div>
+              <div class="project-actions">
+                <a href="#lab" class="project-link-btn">
+                  <span data-i18n="proj_btn_view">Coba Demo Interaktif</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                    <polyline points="7 7 17 7 17 17"></polyline>
+                  </svg>
+                </a>
+                <a href="https://github.com/ardirsaputra" target="_blank" rel="noopener noreferrer" class="project-link-btn" style="color: var(--text-secondary);">
+                  <span data-i18n="proj_btn_github">GitHub</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 6: Google Play Store Dashboard (Ars Dev) -->
+          <div class="project-card">
+            <div class="project-card-image-wrap contain-mode" style="background: #090e17;">
+              <img src="assets/arsdev.png" alt="Ars Dev Publisher Logo & Branding">
+              <span class="project-badge-tag" style="color: #10b981;" data-i18n="proj_play_badge">Play Store</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">
+                <span data-i18n="proj_play_title">Google Play Store (Ars Dev)</span>
+                <span style="color: #10b981;">Android Apps</span>
+              </h3>
+              <p class="project-desc" data-i18n="proj_play_desc">
+                Kumpulan aplikasi Android yang dirilis di Google Play Store di bawah akun pengembang Ars Dev.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">Google Play Console</span>
+                <span class="project-tag">Android Apps</span>
+                <span class="project-tag">Ars Dev Publisher</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://github.com/ardirsaputra" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+                  <span data-i18n="proj_btn_play">Lihat Portofolio Publisher</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                    <polyline points="7 7 17 7 17 17"></polyline>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         INTERACTIVE LAB / PLAYGROUND (Live Working Widgets)
+         ========================================================================= -->
+    <section class="section" id="lab" style="background: rgba(14, 20, 34, 0.65);">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag" style="background: rgba(16, 185, 129, 0.1); border-color: rgba(16, 185, 129, 0.3); color: var(--accent-emerald);" data-i18n="lab_tag">Demo Interaktif</span>
+          <h2 class="section-title" data-i18n="lab_title">Coba Fitur Kalkulator</h2>
+          <p class="section-subtitle" data-i18n="lab_sub">
+            Uji langsung perhitungan logika aplikasi di browser.
+          </p>
+        </div>
+
+        <div class="lab-grid">
+          <!-- Live Eco Enzyme Calculator -->
+          <div class="glass-card calculator-card">
+            <div class="calc-header">
+              <div class="calc-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="calc-title" data-i18n="calc_eco_title">Kalkulator Eco Enzyme</h3>
+                <span class="calc-formula-badge">Formula 1 GMT : 3 BO : 10 Air</span>
+              </div>
+            </div>
+
+            <!-- Inputs -->
+            <div class="form-group">
+              <div class="form-label-row">
+                <label for="eco-vol-input" data-i18n="calc_eco_label_vol">Volume Wadah (Liter):</label>
+              </div>
+              <input type="number" id="eco-vol-input" class="number-input-field" value="10" min="1" max="1000" step="0.5">
+            </div>
+
+            <div class="form-group">
+              <div class="form-label-row">
+                <label for="eco-ratio-slider" data-i18n="calc_eco_label_water_ratio">Rasio Kapasitas Air:</label>
+                <span class="form-label-val" id="eco-ratio-val">60%</span>
+              </div>
+              <input type="range" id="eco-ratio-slider" class="range-slider" min="10" max="100" value="60" step="5">
+            </div>
+
+            <!-- Results -->
+            <div class="calc-results-box">
+              <div class="calc-res-item">
+                <span class="calc-res-label" data-i18n="calc_res_water">Air (Liter)</span>
+                <span class="calc-res-val highlight" id="eco-res-water">6.0</span>
+              </div>
+              <div class="calc-res-item">
+                <span class="calc-res-label" data-i18n="calc_res_bo">Bahan Organik (Kg)</span>
+                <span class="calc-res-val" id="eco-res-bo">1.80</span>
+              </div>
+              <div class="calc-res-item">
+                <span class="calc-res-label" data-i18n="calc_res_gmt">Gula Merah/GMT (Kg)</span>
+                <span class="calc-res-val" id="eco-res-gmt">0.60</span>
+              </div>
+            </div>
+
+            <p style="font-size: 0.82rem; color: var(--text-muted); line-height: 1.5;" data-i18n="calc_eco_formula_note">
+              Formula standar eco enzyme: 1 bagian Gula (GMT) : 3 bagian Bahan Organik (BO) : 10 bagian Air.
+            </p>
+          </div>
+
+          <!-- Live YouTube Quota Calculator -->
+          <div class="glass-card calculator-card">
+            <div class="calc-header">
+              <div class="calc-icon red">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                </svg>
+              </div>
+              <div>
+                <h3 class="calc-title" data-i18n="calc_quota_title">Estimasi Kuota Video YouTube</h3>
+                <span class="calc-formula-badge" style="color: var(--accent-rose); background: rgba(244, 63, 94, 0.08);">Perhitungan Konsumsi Bandwidth</span>
+              </div>
+            </div>
+
+            <!-- Resolution Selector Buttons -->
+            <div class="form-group">
+              <label class="form-label-row" data-i18n="calc_quota_label_res">Pilih Resolusi Video:</label>
+              <div class="res-buttons-grid">
+                <button type="button" class="res-pill-btn" data-res="144p">144p</button>
+                <button type="button" class="res-pill-btn" data-res="240p">240p</button>
+                <button type="button" class="res-pill-btn active" data-res="360p">360p</button>
+                <button type="button" class="res-pill-btn" data-res="480p">480p</button>
+                <button type="button" class="res-pill-btn" data-res="720p">720p HD</button>
+                <button type="button" class="res-pill-btn" data-res="1080p">1080p FHD</button>
+                <button type="button" class="res-pill-btn" data-res="1440p">1440p 2K</button>
+              </div>
+            </div>
+
+            <!-- Duration Slider -->
+            <div class="form-group">
+              <div class="form-label-row">
+                <label for="quota-dur-slider" data-i18n="calc_quota_label_dur">Durasi Nonton (Jam):</label>
+                <span class="form-label-val" id="quota-dur-val">1 Jam / Hour</span>
+              </div>
+              <input type="range" id="quota-dur-slider" class="range-slider red" min="0.5" max="12" value="1" step="0.5">
+            </div>
+
+            <!-- Results -->
+            <div class="calc-results-box">
+              <div class="calc-res-item">
+                <span class="calc-res-label" data-i18n="calc_res_data">Total Kuota</span>
+                <span class="calc-res-val highlight-rose" id="quota-res-data">350 MB</span>
+              </div>
+              <div class="calc-res-item">
+                <span class="calc-res-label" data-i18n="calc_res_rate">Konsumsi per Menit</span>
+                <span class="calc-res-val" id="quota-res-rate">5.8 MB / Min</span>
+              </div>
+              <div class="calc-res-item">
+                <span class="calc-res-label" data-i18n="calc_res_speed">Kecepatan Min.</span>
+                <span class="calc-res-val" id="quota-res-speed">800 Kbps</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         WORKFLOW & SERVICES ("Tahapan Pengerjaan Proyek")
+         ========================================================================= -->
+    <section class="section" id="workflow">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag" data-i18n="flow_tag">Alur Kerja</span>
+          <h2 class="section-title" data-i18n="flow_title">Tahapan Pengerjaan Proyek</h2>
+          <p class="section-subtitle" data-i18n="flow_sub">
+            Langkah pengerjaan terstruktur dari diskusi awal hingga aplikasi siap digunakan.
+          </p>
+        </div>
+
+        <div class="workflow-steps-grid">
+          <div class="glass-card step-card">
+            <span class="step-number">01</span>
+            <h3 class="step-title" data-i18n="step_1_title">1. Diskusi Kebutuhan</h3>
+            <p class="step-desc" data-i18n="step_1_desc">
+              Membahas tujuan proyek, alur fitur yang dibutuhkan, dan perkiraan waktu pengerjaan.
+            </p>
+          </div>
+
+          <div class="glass-card step-card">
+            <span class="step-number" style="color: rgba(6, 182, 212, 0.25);">02</span>
+            <h3 class="step-title" data-i18n="step_2_title">2. Desain & Struktur</h3>
+            <p class="step-desc" data-i18n="step_2_desc">
+              Menyusun rancangan antarmuka dan struktur data yang akan digunakan.
+            </p>
+          </div>
+
+          <div class="glass-card step-card">
+            <span class="step-number" style="color: rgba(16, 185, 129, 0.25);">03</span>
+            <h3 class="step-title" data-i18n="step_3_title">3. Pengerjaan & Pengujian</h3>
+            <p class="step-desc" data-i18n="step_3_desc">
+              Penulisan kode program, integrasi fungsi, dan pengujian untuk memastikan aplikasi berjalan baik.
+            </p>
+          </div>
+
+          <div class="glass-card step-card">
+            <span class="step-number" style="color: rgba(244, 63, 94, 0.25);">04</span>
+            <h3 class="step-title" data-i18n="step_4_title">4. Rilis & Pemeliharaan</h3>
+            <p class="step-desc" data-i18n="step_4_desc">
+              Membantu proses unggah ke server/Play Store dan perbaikan jika dibutuhkan.
+            </p>
+          </div>
+        </div>
+
+        <!-- Services Cards -->
+        <div class="services-grid">
+          <div class="glass-card service-card">
+            <div class="service-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+                <line x1="12" y1="18" x2="12.01" y2="18"></line>
+              </svg>
+            </div>
+            <h3 class="service-title" data-i18n="service_1_title">Aplikasi Mobile</h3>
+            <p class="service-desc" data-i18n="service_1_desc">
+              Pembuatan aplikasi Android dan iOS menggunakan Flutter sesuai kebutuhan.
+            </p>
+          </div>
+
+          <div class="glass-card service-card">
+            <div class="service-icon" style="background: rgba(6, 182, 212, 0.1); color: var(--accent-cyan); border-color: rgba(6, 182, 212, 0.2);">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                <line x1="8" y1="21" x2="16" y2="21"></line>
+                <line x1="12" y1="17" x2="12" y2="21"></line>
+              </svg>
+            </div>
+            <h3 class="service-title" data-i18n="service_2_title">Website & Integrasi API</h3>
+            <p class="service-desc" data-i18n="service_2_desc">
+              Pembuatan website fungsional dan integrasi sistem dengan backend atau basis data.
+            </p>
+          </div>
+
+          <div class="glass-card service-card">
+            <div class="service-icon" style="background: rgba(16, 185, 129, 0.1); color: var(--accent-emerald); border-color: rgba(16, 185, 129, 0.2);">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="4 17 10 11 4 5"></polyline>
+                <line x1="12" y1="19" x2="20" y2="19"></line>
+              </svg>
+            </div>
+            <h3 class="service-title" data-i18n="service_3_title">Perbaikan & Pemeliharaan</h3>
+            <p class="service-desc" data-i18n="service_3_desc">
+              Bantuan perbaikan fitur, optimasi kinerja aplikasi, atau pemeliharaan berkala.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         CONTACT SECTION ("Hubungi Saya")
+         ========================================================================= -->
+    <section class="section" id="contact" style="background: rgba(10, 15, 26, 0.7);">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag" data-i18n="contact_tag">Kontak</span>
+          <h2 class="section-title" data-i18n="contact_title">Hubungi Saya</h2>
+          <p class="section-subtitle" data-i18n="contact_sub">
+            Silakan hubungi melalui salah satu saluran berikut jika ada proyek atau hal yang ingin didiskusikan.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Direct Channels -->
+          <div class="glass-card contact-info-card">
+            <h3 style="font-family: var(--font-heading); font-size: 1.3rem; color: #fff;">Saluran Komunikasi Langsung</h3>
+
+            <div class="contact-channels-list">
+              <!-- WhatsApp -->
+              <a href="https://wa.me/6282282418992" target="_blank" rel="noopener noreferrer" class="channel-link">
+                <div class="channel-icon" style="background: rgba(16, 185, 129, 0.12); color: var(--accent-emerald);">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                  </svg>
+                </div>
+                <div class="channel-info">
+                  <h4>WhatsApp (+62 822-8241-8992)</h4>
+                  <p data-i18n="contact_channel_wa_desc">Kontak langsung untuk diskusi proyek atau pertanyaan cepat.</p>
+                </div>
+              </a>
+
+              <!-- Email -->
+              <a href="mailto:fluzzzer@gmail.com" class="channel-link">
+                <div class="channel-icon" style="background: rgba(245, 158, 11, 0.12); color: var(--accent-amber);">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </div>
+                <div class="channel-info">
+                  <h4>Email (fluzzzer@gmail.com)</h4>
+                  <p data-i18n="contact_channel_mail_desc">Untuk penawaran formal atau kebutuhan kerja sama.</p>
+                </div>
+              </a>
+
+              <!-- Fiverr -->
+              <a href="https://www.fiverr.com/ardirs?public_mode=true" target="_blank" rel="noopener noreferrer" class="channel-link">
+                <div class="channel-icon" style="background: rgba(16, 185, 129, 0.12); color: var(--accent-emerald);">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2"/>
+                    <text x="12" y="16" font-size="12" font-weight="bold" text-anchor="middle" fill="currentColor">fi</text>
+                  </svg>
+                </div>
+                <div class="channel-info">
+                  <h4>Fiverr Marketplace (@ardirs)</h4>
+                  <p data-i18n="contact_channel_fiverr_desc">Layanan lepas melalui platform Fiverr.</p>
+                </div>
+              </a>
+
+              <!-- LinkedIn -->
+              <a href="https://www.linkedin.com/in/ardi-rs/" target="_blank" rel="noopener noreferrer" class="channel-link">
+                <div class="channel-icon" style="background: rgba(6, 182, 212, 0.12); color: var(--accent-cyan);">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                  </svg>
+                </div>
+                <div class="channel-info">
+                  <h4>LinkedIn (/in/ardi-rs)</h4>
+                  <p data-i18n="contact_channel_linkedin_desc">Profil profesional dan jaringan karier.</p>
+                </div>
+              </a>
+
+              <!-- GitHub -->
+              <a href="https://github.com/ardirsaputra" target="_blank" rel="noopener noreferrer" class="channel-link">
+                <div class="channel-icon">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                  </svg>
+                </div>
+                <div class="channel-info">
+                  <h4>GitHub (@ardirsaputra)</h4>
+                  <p data-i18n="contact_channel_github_desc">Kumpulan repositori kode dan proyek open source.</p>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!-- Quick Message Form -->
+          <div class="glass-card contact-info-card">
+            <h3 style="font-family: var(--font-heading); font-size: 1.3rem; color: #fff;" data-i18n="contact_chat_hint">Kirim Pesan Cepat</h3>
+
+            <form class="quick-message-form" onsubmit="return false;">
+              <div>
+                <label for="msg-name" style="display: block; font-size: 0.88rem; color: var(--text-secondary); margin-bottom: 8px;" data-i18n="contact_name_placeholder">Nama Anda</label>
+                <input type="text" id="msg-name" class="input-box" placeholder="Nama Anda" data-i18n-placeholder="contact_name_placeholder">
+              </div>
+
+              <div>
+                <label for="msg-content" style="display: block; font-size: 0.88rem; color: var(--text-secondary); margin-bottom: 8px;">Pesan Anda</label>
+                <textarea id="msg-content" class="input-box" placeholder="Tuliskan pesan atau pertanyaan Anda..." data-i18n-placeholder="contact_msg_placeholder"></textarea>
+              </div>
+
+              <div class="form-actions-row">
+                <button type="button" id="send-wa-btn" class="btn-primary" style="flex: 1; justify-content: center;">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                  </svg>
+                  <span data-i18n="contact_btn_wa">Kirim via WhatsApp</span>
+                </button>
+
+                <button type="button" id="send-email-btn" class="btn-secondary" style="flex: 1; justify-content: center;">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                  <span data-i18n="contact_btn_email">Kirim via Email</span>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================================================================
+       FOOTER
+       ========================================================================= -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div>
+        <p class="footer-copy" data-i18n="footer_copy">© 2026 Ardi Ragil Saputra (Ars Dev). All rights reserved.</p>
+      </div>
+      <div>
+        <p class="footer-motto" data-i18n="footer_motto">Ardi Ragil Saputra • Mobile & Web Developer</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Portfolio Logic & Bilingual Engine -->
+  <script src="script.js"></script>
 </body>
 </html>
