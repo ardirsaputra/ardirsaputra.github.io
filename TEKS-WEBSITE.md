@@ -945,6 +945,68 @@ API, Integrasi Sistem
 ### Kartu 5
 
 #### marker (teks di lingkaran, mis. 2024)
+ID: 2019
+EN: 2019
+
+#### period (rentang waktu)
+ID: 2019
+EN: 2019
+
+#### title (nama proyek)
+ID: Tema WordPress Teknik Unila
+EN: WordPress Themes for Teknik Unila
+
+#### status (label kecil)
+ID: Editor tema WordPress
+EN: WordPress theme editor
+
+#### description (penjelasan 1-2 kalimat)
+ID: Menyunting dan menyesuaikan tema WordPress untuk situs-situs di lingkungan Fakultas Teknik Universitas Lampung.
+EN: Editing and customising WordPress themes for websites across the Faculty of Engineering, Universitas Lampung.
+
+#### state (isi: done / ongoing / planned)
+done
+
+#### stack (pisahkan dengan koma)
+WordPress
+
+#### link (kosongkan kalau tidak ada)
+
+
+### Kartu 6
+
+#### marker (teks di lingkaran, mis. 2024)
+ID: 2020
+EN: 2020
+
+#### period (rentang waktu)
+ID: 2020
+EN: 2020
+
+#### title (nama proyek)
+ID: Aplikasi Penilaian Dosen
+EN: Lecturer Assessment App
+
+#### status (label kecil)
+ID: Proyek Universitas Lampung
+EN: Universitas Lampung project
+
+#### description (penjelasan 1-2 kalimat)
+ID: Pengembangan sistem web untuk penilaian dosen di Universitas Lampung.
+EN: Development of a web system for lecturer assessment at Universitas Lampung.
+
+#### state (isi: done / ongoing / planned)
+done
+
+#### stack (pisahkan dengan koma)
+Laravel, PHP
+
+#### link (kosongkan kalau tidak ada)
+
+
+### Kartu 7
+
+#### marker (teks di lingkaran, mis. 2024)
 ID: 2021
 EN: 2021
 
@@ -973,7 +1035,7 @@ Flutter, Laravel
 #### link (kosongkan kalau tidak ada)
 
 
-### Kartu 6
+### Kartu 8
 
 #### marker (teks di lingkaran, mis. 2024)
 ID: 2022
@@ -1004,7 +1066,7 @@ Android, Web
 #### link (kosongkan kalau tidak ada)
 
 
-### Kartu 7
+### Kartu 9
 
 #### marker (teks di lingkaran, mis. 2024)
 ID: 2023
@@ -1035,7 +1097,7 @@ Flutter, Android, GPS
 #### link (kosongkan kalau tidak ada)
 https://play.google.com/store/apps/details?id=id.co.waykanankab.siapkerja&hl=id
 
-### Kartu 8
+### Kartu 10
 
 #### marker (teks di lingkaran, mis. 2024)
 ID: 2024
@@ -1066,7 +1128,7 @@ Flutter, Laravel
 #### link (kosongkan kalau tidak ada)
 
 
-### Kartu 9
+### Kartu 11
 
 #### marker (teks di lingkaran, mis. 2024)
 ID: 2024
@@ -1097,7 +1159,7 @@ Flutter, Firebase, Backend
 #### link (kosongkan kalau tidak ada)
 
 
-### Kartu 10
+### Kartu 12
 
 #### marker (teks di lingkaran, mis. 2024)
 ID: 2025
@@ -1128,7 +1190,7 @@ PHP, Laravel, Database
 #### link (kosongkan kalau tidak ada)
 https://bumkpujodadibersatu.com
 
-### Kartu 11
+### Kartu 13
 
 #### marker (teks di lingkaran, mis. 2024)
 ID: 2026
@@ -1159,7 +1221,7 @@ Flutter, Dart, Android
 #### link (kosongkan kalau tidak ada)
 https://arstore-dev.vercel.app/download
 
-### Kartu 12
+### Kartu 14
 
 #### marker (teks di lingkaran, mis. 2024)
 ID: 2026

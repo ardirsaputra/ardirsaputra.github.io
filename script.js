@@ -89,6 +89,39 @@
       stack: ["API", "Integrasi Sistem"],
     },
     {
+      marker: "2019",
+      period: "2019",
+      title: {
+        id: "Tema WordPress Teknik Unila",
+        en: "WordPress Themes for Teknik Unila",
+      },
+      status: { id: "Editor tema WordPress", en: "WordPress theme editor" },
+      state: "done",
+      description: {
+        id: "Menyunting dan menyesuaikan tema WordPress untuk situs-situs di lingkungan Fakultas Teknik Universitas Lampung.",
+        en: "Editing and customising WordPress themes for websites across the Faculty of Engineering, Universitas Lampung.",
+      },
+      stack: ["WordPress"],
+    },
+    {
+      marker: "2020",
+      period: "2020",
+      title: {
+        id: "Aplikasi Penilaian Dosen",
+        en: "Lecturer Assessment App",
+      },
+      status: {
+        id: "Proyek Universitas Lampung",
+        en: "Universitas Lampung project",
+      },
+      state: "done",
+      description: {
+        id: "Pengembangan sistem web untuk penilaian dosen di Universitas Lampung.",
+        en: "Development of a web system for lecturer assessment at Universitas Lampung.",
+      },
+      stack: ["Laravel", "PHP"],
+    },
+    {
       marker: "2021",
       period: "2021",
       title: "Recycle Plastic",
