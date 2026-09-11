@@ -714,17 +714,17 @@ EN: Feel free to reach out through any of the channels below to discuss projects
 ID: Saluran Komunikasi Langsung
 EN: Saluran Komunikasi Langsung
 
-#### [HTML baris 1676]  `.channel-info`
-ID: WhatsApp (+62 822-8241-8992)
-EN: WhatsApp (+62 822-8241-8992)
+#### [HTML baris 1676]  `.channel-info`  (nomor diisi otomatis oleh script.js -> CONTACT_ENC, lihat PANDUAN)
+ID: WhatsApp (…)
+EN: WhatsApp (…)
 
 #### contact_channel_wa_desc  [2 bahasa]  `.channel-info`
 ID: Kontak langsung untuk diskusi proyek atau pertanyaan cepat.
 EN: Direct contact for project inquiries or quick questions.
 
-#### [HTML baris 1710]  `.channel-info`
-ID: Email (ardi.rs@gmail.com)
-EN: Email (ardi.rs@gmail.com)
+#### [HTML baris 1710]  `.channel-info`  (alamat diisi otomatis oleh script.js -> CONTACT_ENC, lihat PANDUAN)
+ID: Email (…)
+EN: Email (…)
 
 #### contact_channel_mail_desc  [2 bahasa]  `.channel-info`
 ID: Untuk penawaran formal atau kebutuhan kerja sama.

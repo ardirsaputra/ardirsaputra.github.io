@@ -17,8 +17,10 @@ Dokumen ini menjelaskan **isi setiap bagian halaman**, **cara kerja fiturnya**, 
 Halaman ini **statis murni** (HTML + CSS + JS biasa) — tanpa framework, tanpa proses build.
 Cukup edit file, simpan, lalu refresh browser (Ctrl + F5 supaya cache bersih).
 
-> Catatan: file sisa proyek Flutter lama (`main.dart.js`, `flutter_bootstrap.js`,
-> `canvaskit/`, `lib/`, `pubspec.yaml`) sudah tidak dipakai oleh landing page ini.
+> Catatan: file sisa proyek Flutter lama (`main.dart.js`, `canvaskit/`, `lib/`, dll.)
+> sudah dihapus. Satu-satunya yang sengaja disisakan adalah `flutter_service_worker.js`
+> — isinya sekarang hanya perintah "hapus cache & batalkan pendaftaran" untuk browser
+> pengunjung lama yang masih menyimpan service worker Flutter. Jangan dihapus.
 
 ---
 
@@ -105,8 +107,8 @@ dan tiga kartu layanan (Aplikasi Mobile, Website, layanan pendukung).
 
 - Daftar saluran langsung: WhatsApp, email, media sosial.
 - **Form pesan cepat**: isi nama + pesan, lalu:
-  - Tombol **WhatsApp** membuka `wa.me/6282282418992` dengan teks pesan sudah terisi.
-  - Tombol **Email** membuka aplikasi email ke `ardi.rs@gmail.com`, subjek dan isi terisi.
+  - Tombol **WhatsApp** membuka `wa.me/<nomor>` dengan teks pesan sudah terisi.
+  - Tombol **Email** membuka aplikasi email ke alamat Anda, subjek dan isi terisi.
 - Form ini **tidak mengirim data ke server mana pun** — hanya menyiapkan pesan di
   aplikasi pengunjung. Jadi tidak butuh backend dan tidak ada data yang tersimpan.
 
@@ -210,6 +212,24 @@ dipasang dari JavaScript lewat fungsi `setupScrollReveal()` — jadi kalau JS ma
 tidak ada konten yang tersembunyi. Daftar elemen dan jeda antar kartu diatur pada
 array `groups` di dalam fungsi tersebut. Semua animasi otomatis mati kalau pengguna
 menyalakan "kurangi animasi" di sistem operasinya (`prefers-reduced-motion`).
+
+**Nomor WhatsApp & alamat email (anti-spam).**
+Nomor dan email **tidak ditulis mentah** di `index.html` supaya tidak dipanen bot spam.
+Keduanya disimpan terenkode di `script.js` pada objek `CONTACT_ENC` (dibalik + base64),
+lalu dipasang otomatis ke semua tombol/link bertanda `data-contact="wa"` /
+`data-contact="mail"` dan teks bertanda `data-contact-text`. Cara mengganti:
+buka konsol browser (F12), jalankan `btoa([...'NILAI_BARU'].reverse().join(''))`,
+lalu tempel hasilnya ke `CONTACT_ENC`. Ada tiga nilai: `phoneDigits` (format
+`62xxxxxxxxxxx`, tanpa `+`/spasi), `phoneDisplay` (teks yang tampil), dan `email`.
+Ini hanya menyulitkan scraper sederhana, bukan enkripsi — repo ini publik di GitHub.
+
+**Keamanan (header via meta).**
+GitHub Pages tidak bisa mengatur HTTP header, jadi `Content-Security-Policy` dan
+`referrer` dipasang lewat `<meta>` di `<head>`. CSP-nya ketat: script hanya dari
+`script.js` (**tidak boleh ada `onclick=`/`onerror=` inline atau `<script>` inline**),
+style dari file sendiri + Google Fonts, gambar dari situs sendiri/`https:`. Kalau
+menambah library dari CDN atau API eksternal, tambahkan domainnya ke `script-src` /
+`connect-src` di meta CSP, kalau tidak akan diblokir browser (cek Console F12).
 
 **SEO dan pratinjau share.**
 Meta title, description, keywords, Open Graph, dan Twitter Card sudah terisi di

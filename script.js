@@ -935,7 +935,57 @@
   // =========================================================================
   // 4. QUICK MESSAGE TO WHATSAPP & EMAIL
   // =========================================================================
+  // =========================================================================
+  // KONTAK (anti-scraper)
+  // Nomor WA & email tidak ditulis mentah di HTML/JS supaya tidak dipanen bot
+  // spam. Nilai disimpan terbalik + base64, lalu dipasang ke elemen
+  // [data-contact] / [data-contact-text] saat halaman dimuat.
+  // Untuk mengganti: jalankan di konsol browser ->
+  //   btoa([...'NILAI_BARU'].reverse().join(''))
+  // =========================================================================
+  const CONTACT_ENC = {
+    phoneDigits: "Mjk5ODE0MjgyMjgyNg==", // 62xxxxxxxxxxx (untuk wa.me)
+    phoneDisplay: "Mjk5OC0xNDI4LTIyOCAyNis=", // +62 xxx-xxxx-xxxx (tampilan)
+    email: "bW9jLmxpYW1nQHNyLmlkcmE=",
+  };
+
+  function decodeContact(v) {
+    try {
+      return [...atob(v)].reverse().join("");
+    } catch (e) {
+      return "";
+    }
+  }
+
+  const CONTACT = {
+    phoneDigits: decodeContact(CONTACT_ENC.phoneDigits),
+    phoneDisplay: decodeContact(CONTACT_ENC.phoneDisplay),
+    email: decodeContact(CONTACT_ENC.email),
+  };
+
+  function contactHref(kind) {
+    if (kind === "wa") return `https://wa.me/${CONTACT.phoneDigits}`;
+    if (kind === "mail") return `mailto:${CONTACT.email}`;
+    return "#contact";
+  }
+
+  function setupContactLinks() {
+    document.querySelectorAll("[data-contact]").forEach((a) => {
+      a.setAttribute("href", contactHref(a.dataset.contact));
+    });
+    document.querySelectorAll("[data-contact-text]").forEach((el) => {
+      const key = el.dataset.contactText;
+      el.textContent =
+        key === "phone" ? CONTACT.phoneDisplay : key === "email" ? CONTACT.email : "";
+    });
+  }
+
   function setupQuickMessage() {
+    const form = document.getElementById("quick-message-form");
+    if (form) {
+      form.addEventListener("submit", (e) => e.preventDefault());
+    }
+
     const btnWA = document.getElementById("send-wa-btn");
     const btnEmail = document.getElementById("send-email-btn");
     const inputName = document.getElementById("msg-name");
@@ -954,7 +1004,7 @@
             : "Hello Ardi, I would like to inquire about a software project.");
 
         const text = `Halo Ardi (Ars Dev), saya ${name}.\n\n${content}`;
-        const waUrl = `https://wa.me/6282282418992?text=${encodeURIComponent(text)}`;
+        const waUrl = `${contactHref("wa")}?text=${encodeURIComponent(text)}`;
         window.open(waUrl, "_blank");
       });
     }
@@ -968,7 +1018,7 @@
           "Hello Ardi, I would like to connect with you regarding a project.";
 
         const subject = `Pesan dari ${name} (Website Portofolio)`;
-        const mailUrl = `mailto:ardi.rs@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(content)}`;
+        const mailUrl = `${contactHref("mail")}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(content)}`;
         window.location.href = mailUrl;
       });
     }
@@ -1050,6 +1100,7 @@
     setTheme(currentTheme);
     setLanguage(currentLang);
     renderProjectTimeline();
+    setupContactLinks();
     setupProjectImageFields();
     setupNavigation();
     setupTimelineScroll();

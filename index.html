@@ -3,6 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Keamanan: CSP (GitHub Pages tidak bisa set HTTP header, jadi via meta) -->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests"
+    />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
 
     <!-- Primary Meta Tags -->
@@ -138,7 +145,7 @@
 
           <!-- Compact Subtle CTA Button -->
           <a
-            href="https://wa.me/6282282418992"
+            href="#contact" data-contact="wa"
             target="_blank"
             rel="noopener noreferrer"
             class="nav-cta-btn"
@@ -223,7 +230,7 @@
                 </a>
 
                 <a
-                  href="https://wa.me/6282282418992"
+                  href="#contact" data-contact="wa"
                   target="_blank"
                   rel="noopener noreferrer"
                   class="btn-secondary"
@@ -241,7 +248,7 @@
                   <span data-i18n="hero_btn_wa">WhatsApp</span>
                 </a>
 
-                <a href="mailto:ardi.rs@gmail.com" class="btn-secondary">
+                <a href="#contact" data-contact="mail" class="btn-secondary">
                   <svg
                     width="18"
                     height="18"
@@ -903,7 +910,6 @@
                   alt="Screenshot Aplikasi SiapKerja Way Kanan"
                   class="project-cover-img"
                   loading="lazy"
-                  onerror="this.classList.add('img-hidden')"
                 />
 
                 <!-- Visual Grafis Interaktif (Tampil otomatis jika URL gambar di atas kosong) -->
@@ -1004,7 +1010,6 @@
                   alt="Screenshot Website BUMK Keuangan Desa"
                   class="project-cover-img"
                   loading="lazy"
-                  onerror="this.classList.add('img-hidden')"
                 />
 
                 <!-- Visual Grafis Interaktif (Tampil otomatis jika URL gambar di atas kosong) -->
@@ -1135,7 +1140,6 @@
                   alt="Screenshot Platform Website mabarasik.com"
                   class="project-cover-img"
                   loading="lazy"
-                  onerror="this.classList.add('img-hidden')"
                 />
 
                 <!-- Visual Grafis Interaktif (Tampil otomatis jika URL gambar di atas kosong) -->
@@ -1247,7 +1251,6 @@
                   alt="Screenshot Aplikasi Utilitasku Android Tools All in One"
                   class="project-cover-img"
                   loading="lazy"
-                  onerror="this.classList.add('img-hidden')"
                 />
 
                 <!-- Visual Grafis Interaktif (Tampil otomatis jika URL gambar di atas kosong) -->
@@ -1649,7 +1652,7 @@
               <div class="contact-channels-list">
                 <!-- WhatsApp -->
                 <a
-                  href="https://wa.me/6282282418992"
+                  href="#contact" data-contact="wa"
                   target="_blank"
                   rel="noopener noreferrer"
                   class="channel-link"
@@ -1673,7 +1676,7 @@
                     </svg>
                   </div>
                   <div class="channel-info">
-                    <h4>WhatsApp (+62 822-8241-8992)</h4>
+                    <h4>WhatsApp (<span data-contact-text="phone">…</span>)</h4>
                     <p data-i18n="contact_channel_wa_desc">
                       Kontak langsung untuk diskusi proyek atau pertanyaan
                       cepat.
@@ -1682,7 +1685,7 @@
                 </a>
 
                 <!-- Email -->
-                <a href="mailto:ardi.rs@gmail.com" class="channel-link">
+                <a href="#contact" data-contact="mail" class="channel-link">
                   <div
                     class="channel-icon"
                     style="
@@ -1707,7 +1710,7 @@
                     </svg>
                   </div>
                   <div class="channel-info">
-                    <h4>Email (ardi.rs@gmail.com)</h4>
+                    <h4>Email (<span data-contact-text="email">…</span>)</h4>
                     <p data-i18n="contact_channel_mail_desc">
                       Untuk penawaran formal atau kebutuhan kerja sama.
                     </p>
@@ -1749,7 +1752,7 @@
                 Kirim Pesan Cepat
               </h3>
 
-              <form class="quick-message-form" onsubmit="return false;">
+              <form class="quick-message-form" id="quick-message-form">
                 <div>
                   <label
                     for="msg-name"
