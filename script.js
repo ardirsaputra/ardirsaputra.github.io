@@ -1062,15 +1062,36 @@
 
     // Mobile Menu Toggle
     if (mobileToggle && navLinks) {
-      mobileToggle.addEventListener("click", function () {
-        navLinks.classList.toggle("mobile-open");
+      const setMenu = (open) => {
+        navLinks.classList.toggle("mobile-open", open);
+        mobileToggle.setAttribute("aria-expanded", open ? "true" : "false");
+      };
+      setMenu(false);
+
+      mobileToggle.addEventListener("click", function (e) {
+        e.stopPropagation();
+        setMenu(!navLinks.classList.contains("mobile-open"));
       });
 
       // Close menu when clicking link
       navItems.forEach((item) => {
-        item.addEventListener("click", function () {
-          navLinks.classList.remove("mobile-open");
-        });
+        item.addEventListener("click", () => setMenu(false));
+      });
+
+      // Tutup saat sentuh/klik di luar menu, tekan Escape, atau layar melebar
+      document.addEventListener("click", function (e) {
+        if (
+          navLinks.classList.contains("mobile-open") &&
+          !navLinks.contains(e.target)
+        ) {
+          setMenu(false);
+        }
+      });
+      document.addEventListener("keydown", function (e) {
+        if (e.key === "Escape") setMenu(false);
+      });
+      window.matchMedia("(min-width: 769px)").addEventListener("change", (e) => {
+        if (e.matches) setMenu(false);
       });
     }
 

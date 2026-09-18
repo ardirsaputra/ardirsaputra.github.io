@@ -2171,9 +2171,10 @@ textarea.input-box {
 }
 
 /* ==========================================================================
-   RESPONSIVE DESIGN (Mobile First & Tablet Overrides)
+   RESPONSIVE DESIGN (Tablet & Mobile Overrides)
    ========================================================================== */
 
+/* --- Tablet (<= 1024px) --- */
 @media (max-width: 1024px) {
   .hero-grid {
     grid-template-columns: 1fr;
@@ -2181,13 +2182,14 @@ textarea.input-box {
   }
   .hero-visual {
     max-width: 480px;
+    width: 100%;
     margin: 0 auto;
   }
   .about-grid {
     grid-template-columns: 1fr;
   }
   .skills-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
   }
   .projects-grid {
     grid-template-columns: 1fr;
@@ -2196,77 +2198,471 @@ textarea.input-box {
     grid-template-columns: repeat(2, 1fr);
   }
   .services-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
   }
   .contact-grid {
     grid-template-columns: 1fr;
   }
+
+  /* Timeline mode swipe: beri ruang untuk scrollbar horizontal */
+  .timeline-static .timeline-viewport {
+    padding-bottom: 12px;
+  }
 }
 
+/* --- Mobile (<= 768px) --- */
 @media (max-width: 768px) {
-  .section {
-    padding: 70px 0;
+  html {
+    scroll-padding-top: 80px;
   }
+
+  /* background-attachment: fixed bermasalah/berat di browser mobile (iOS) */
+  body {
+    background-attachment: scroll;
+  }
+
+  .container {
+    padding: 0 20px;
+  }
+
+  .section {
+    padding: 64px 0;
+  }
+
+  .section-header {
+    margin-bottom: 40px;
+  }
+
+  .section-subtitle {
+    font-size: 1rem;
+  }
+
+  .glass-card {
+    padding: 22px;
+  }
+
+  /* ---- Navbar ---- */
+  .navbar {
+    top: 10px;
+    padding: 0 12px;
+  }
+
   .nav-container {
     width: 100%;
     min-width: unset;
     max-width: 100%;
-    padding: 6px 12px;
+    padding: 6px 8px 6px 12px;
+    gap: 8px;
   }
+
+  .nav-controls {
+    gap: 6px;
+  }
+
+  .theme-btn,
+  .lang-btn {
+    height: 36px;
+    min-width: 36px;
+  }
+
   .nav-cta-btn,
   .btn-nav-cta {
     display: none;
   }
+
   .navbar .nav-links {
     display: none;
   }
+
   .navbar .nav-links.mobile-open {
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 60px;
-    left: 16px;
-    right: 16px;
+    /* 100% = tinggi navbar, jadi dropdown selalu tepat di bawah pil nav */
+    top: calc(100% + 8px);
+    left: 12px;
+    right: 12px;
+    max-height: calc(100dvh - 90px);
+    overflow-y: auto;
     background: var(--bg-nav-scrolled);
     backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
     border: 1px solid var(--border-subtle);
     border-radius: var(--radius-lg);
-    padding: 16px;
+    padding: 10px;
     box-shadow: var(--shadow-md);
-    gap: 4px;
+    gap: 2px;
   }
-  .navbar .nav-links.mobile-open .nav-link {
-    padding: 10px 14px;
+
+  .navbar .nav-links.mobile-open li {
     width: 100%;
-    font-size: 0.95rem;
   }
+
+  .navbar .nav-links.mobile-open .nav-link {
+    display: block;
+    width: 100%;
+    padding: 12px 14px;
+    font-size: 0.95rem;
+    border-radius: var(--radius-sm);
+  }
+
+  .navbar .nav-links.mobile-open .nav-link::after {
+    display: none;
+  }
+
   .mobile-toggle {
     display: flex;
-    width: 32px;
-    height: 32px;
+    width: 36px;
+    height: 36px;
     border-radius: var(--radius-full);
     border: 1px solid var(--border-subtle);
-    background: rgba(255, 255, 255, 0.04);
+    background: rgba(15, 23, 42, 0.04);
     align-items: center;
     justify-content: center;
     color: var(--text-primary);
     cursor: pointer;
   }
+
+  [data-theme="dark"] .mobile-toggle {
+    background: rgba(255, 255, 255, 0.04);
+  }
+
+  .mobile-toggle[aria-expanded="true"] {
+    color: var(--accent-amber);
+    border-color: var(--accent-amber);
+    background: rgba(217, 119, 6, 0.12);
+  }
+
   .local-time-badge {
     display: none;
   }
+
+  /* ---- Hero ---- */
+  .hero-section {
+    min-height: 0;
+    padding-top: 96px;
+    padding-bottom: 48px;
+  }
+
+  .hero-grid {
+    gap: 36px;
+  }
+
+  .hero-content {
+    gap: 20px;
+  }
+
   .hero-title {
     font-size: 2.3rem;
+    line-height: 1.18;
   }
+
+  .hero-lead {
+    font-size: 1.02rem;
+  }
+
+  .hero-actions {
+    gap: 10px;
+  }
+
+  .hero-actions .btn-primary,
+  .hero-actions .btn-secondary {
+    padding: 12px 18px;
+  }
+
   .hero-metrics {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(3, 1fr);
     gap: 12px;
+    padding-top: 20px;
   }
+
+  .metric-number {
+    font-size: 1.6rem;
+  }
+
+  .metric-label {
+    font-size: 0.78rem;
+    line-height: 1.35;
+  }
+
+  .profile-card {
+    padding: 24px 20px;
+    gap: 20px;
+  }
+
+  .profile-avatar-container {
+    width: 132px;
+    height: 132px;
+  }
+
+  /* ---- About ---- */
+  .story-lead {
+    font-size: 1.05rem;
+  }
+
+  .personal-passions {
+    gap: 10px;
+  }
+
+  .passion-box {
+    padding: 12px 8px;
+  }
+
+  .passion-title {
+    font-size: 0.78rem;
+  }
+
+  .phil-card {
+    gap: 14px;
+    padding: 18px;
+  }
+
+  .phil-card:hover {
+    transform: none;
+  }
+
+  .phil-icon {
+    width: 42px;
+    height: 42px;
+    font-size: 1.15rem;
+  }
+
+  /* ---- Skills ---- */
+  .skills-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .tech-pill {
+    padding: 7px 12px;
+    font-size: 0.84rem;
+  }
+
+  /* ---- Projects ---- */
+  .projects-grid {
+    gap: 24px;
+  }
+
+  .project-card-image-wrap,
+  .project-graphic-banner {
+    height: 210px;
+    min-height: 210px;
+  }
+
+  .project-body {
+    padding: 22px 20px;
+  }
+
+  .project-title {
+    font-size: 1.2rem;
+    flex-wrap: wrap;
+    gap: 4px 12px;
+  }
+
+  /* Label kecil di kanan judul (Google Play, Website, dst) jangan pecah baris */
+  .project-title > span:last-child:not(:first-child) {
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  .project-badge-tag {
+    top: 12px;
+    right: 12px;
+    padding: 4px 10px;
+    font-size: 0.68rem;
+  }
+
+  .project-desc {
+    font-size: 0.92rem;
+    margin-bottom: 18px;
+  }
+
+  .project-tags {
+    margin-bottom: 18px;
+  }
+
+  .project-actions {
+    flex-wrap: wrap;
+    gap: 12px 18px;
+  }
+
+  .mabar-game-tiles,
+  .bumk-stat-grid {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .tools-grid-preview {
+    gap: 8px;
+  }
+
+  /* ---- Timeline ---- */
+  .timeline-static .timeline-sticky {
+    padding: 64px 0;
+    gap: 28px;
+  }
+
+  .timeline-static .timeline-viewport {
+    scroll-padding-left: 20px;
+  }
+
+  .timeline-static .project-timeline {
+    padding-left: 20px;
+    gap: 16px;
+  }
+
+  .timeline-entry {
+    /* Kartu mengikuti lebar layar supaya tidak terpotong di HP kecil */
+    flex-basis: min(300px, calc(100vw - 56px));
+  }
+
+  .timeline-content {
+    min-height: 0;
+    padding: 18px;
+  }
+
+  .timeline-description {
+    min-height: 0;
+  }
+
+  /* ---- Workflow & Services ---- */
   .workflow-steps-grid {
     grid-template-columns: 1fr;
+    gap: 16px;
   }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    margin-top: 32px;
+  }
+
+  /* ---- Contact ---- */
+  .contact-grid {
+    gap: 24px;
+  }
+
+  .contact-card-title {
+    font-size: 1.15rem;
+  }
+
+  .channel-link {
+    padding: 14px;
+    gap: 12px;
+  }
+
+  .channel-link:hover {
+    transform: none;
+  }
+
+  .channel-info p {
+    overflow-wrap: anywhere;
+  }
+
+  /* 16px mencegah Safari iOS memperbesar layar saat input difokus */
+  .input-box {
+    font-size: 16px;
+  }
+
+  .form-actions-row {
+    flex-direction: column;
+  }
+
+  .form-actions-row .btn-primary,
+  .form-actions-row .btn-secondary {
+    width: 100%;
+    justify-content: center;
+    padding: 13px 18px;
+  }
+
+  /* ---- Footer ---- */
+  .footer {
+    padding: 40px 0 32px;
+  }
+
   .footer-content {
     flex-direction: column;
     text-align: center;
+    gap: 12px;
+  }
+}
+
+/* --- HP kecil (<= 480px) --- */
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 1.75rem;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-actions .btn-primary,
+  .hero-actions .btn-secondary {
+    flex: 1 1 calc(50% - 5px);
+    justify-content: center;
+    padding: 12px 12px;
+    white-space: nowrap;
+  }
+
+  .hero-actions .btn-primary {
+    flex-basis: 100%;
+  }
+
+  .hero-metrics {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .hero-metrics .metric-item:last-child {
+    grid-column: 1 / -1;
+  }
+
+  .personal-passions {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+  }
+
+  .passion-emoji {
+    font-size: 1.35rem;
+  }
+
+  .project-card-image-wrap,
+  .project-graphic-banner {
+    height: 190px;
+    min-height: 190px;
+  }
+
+  .tools-grid-preview {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* --- Perangkat sentuh: matikan efek hover yang "menempel" setelah disentuh --- */
+@media (hover: none) {
+  .glass-card:hover,
+  .project-card:hover,
+  .phil-card:hover,
+  .passion-box:hover,
+  .tech-pill:hover,
+  .channel-link:hover,
+  .social-icon-btn:hover,
+  .btn-primary:hover,
+  .btn-secondary:hover,
+  .theme-btn:hover,
+  .nav-cta-btn:hover,
+  .timeline-entry:hover .timeline-content,
+  .project-link-btn:hover {
+    transform: none;
+  }
+
+  .project-card:hover .project-cover-img:not(.img-hidden),
+  .project-card:hover .project-card-image-wrap img:not(.img-hidden),
+  .profile-card:hover .profile-avatar img {
+    transform: none;
+  }
+
+  .project-card:hover .mabar-tile,
+  .project-card:hover .bumk-stat-chip {
+    transform: none;
   }
 }
