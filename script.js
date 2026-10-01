@@ -224,6 +224,21 @@
       stack: ["Web", "WebSockets", "Multiplayer"],
       link: "https://mabarasik.com",
     },
+    {
+      marker: "2026",
+      period: { id: "2026 - sekarang", en: "2026 - present" },
+      title: {
+        id: "Eksplorasi Agentic AI & Rekayasa Multi-Bahasa",
+        en: "Agentic AI Exploration & Multi-Language Engineering",
+      },
+      status: { id: "Paradigma Modern", en: "Modern Paradigm" },
+      state: "ongoing",
+      description: {
+        id: "Mengintegrasikan alur kerja Agentic AI untuk menembus batasan sintaksis bahasa pemrograman, mempercepat iterasi, dan fokus pada arsitektur sistem yang kokoh.",
+        en: "Integrating Agentic AI workflows to transcend language syntax boundaries, accelerating development cycles with a strong focus on solid system architecture.",
+      },
+      stack: ["Agentic AI", "AI Workflows", "Architecture", "Language-Agnostic"],
+    },
   ];
 
   // =========================================================================
@@ -255,6 +270,7 @@
       profile_summary:
         "Fokus pada pengembangan aplikasi Android, Flutter dan sistem web yang fungsional.",
       chip_flutter: "Flutter, Dart & Android",
+      chip_ai: "Agentic AI & Multi-Stack",
       chip_location: "Lampung, Indonesia",
       author_location: "📍 Lampung, Indonesia",
 
@@ -265,6 +281,9 @@
         "Fokus pada pembuatan aplikasi yang fungsional, terstruktur, optimal dan nyaman digunakan.",
       about_p1:
         "Saya mengembangkan aplikasi mobile dan website untuk berbagai kebutuhan, mulai dari aplikasi presensi pegawai SiapKerja Pemkab Way Kanan di Google Play Store, sistem website pengelolaan keuangan BUMK (seperti bumkpujodadibersatu.com), website game online mabarasik.com, hingga aplikasi utilitasku Android Tools All in One. Setiap proyek dikerjakan dengan struktur kode yang rapi agar mudah dirawat.",
+      about_ai_badge: "Paradigma Baru • Agentic AI",
+      about_p_ai:
+        "Di era teknologi saat ini, batasan bahasa pemrograman bukan lagi halangan untuk menjadi programmer handal. Saya aktif mengadopsi <strong>Agentic AI</strong> untuk akselerasi coding dan eksplorasi lintas teknologi—memposisikan logika komputasi, arsitektur sistem, dan kecepatan pemecahan masalah nyata sebagai fondasi utama.",
       about_p2:
         "Di luar pekerjaan, saya menikmati musik dan dunia audio, menonton film, bersepeda, serta bermain game strategi.",
       passion_gaming: "Game Strategi",
@@ -287,6 +306,9 @@
       phil_title_3: "Pengembangan Berkelanjutan",
       phil_desc_3:
         "Terus memperbarui wawasan teknis dan menyesuaikan solusi dengan kebutuhan nyata proyek.",
+      phil_title_4: "Agentic AI & Agnostik Bahasa",
+      phil_desc_4:
+        "Memanfaatkan Agentic AI untuk menembus batas sintaksis. Fokus programmer masa kini berpindah ke pemecahan masalah (problem-solving) dan arsitektur yang solid, bukan terpaku pada satu bahasa.",
 
       // Skills
       skills_tag: "Keahlian",
@@ -301,7 +323,7 @@
         "Pembuatan API, integrasi server, dan pengelolaan basis data.",
       cat_tools: "Alat & Praktik Kerja",
       cat_tools_desc:
-        "Alat pendukung untuk pengujian, version control, dan pengelolaan kode.",
+        "Praktik rekayasa modern, alur kerja Agentic AI, dan standarisasi produksi lintas bahasa.",
 
       // Projects
       proj_tag: "Portofolio",
@@ -361,7 +383,8 @@
       step_2_desc:
         "Menyusun rancangan antarmuka dan struktur data yang akan digunakan.",
       step_3_title: "3. Pengerjaan & Pengujian",
-      step_3_desc: "Penulisan kode dan pengujian per iterasi. Setiap bagian yang selesai ditunjukkan lebih dulu supaya masukan bisa langsung diterapkan.",
+      step_3_desc:
+        "Penulisan kode berkualitas didukung alur kerja modern berbasis Agentic AI untuk iterasi cepat lintas teknologi, serta pengujian berkala agar hasil presisi sesuai kebutuhan.",
       step_4_title: "4. Rilis & Pemeliharaan",
       step_4_desc: "Membantu proses unggah ke server atau Play Store, lalu masukan setelah pemakaian dijadikan bahan perbaikan berikutnya.",
 
@@ -421,6 +444,7 @@
       profile_summary:
         "Focused on developing functional Android, Flutter and web applications.",
       chip_flutter: "Flutter, Dart & Android",
+      chip_ai: "Agentic AI & Multi-Stack",
       chip_location: "Lampung, Indonesia",
       author_location: "📍 Lampung, Indonesia",
 
@@ -431,6 +455,9 @@
         "Focused on building functional, structured, and user-friendly software.",
       about_p1:
         "I build mobile apps and websites for various needs, from the civil servant attendance app for Pemkab Way Kanan on Google Play Store, the village enterprise financial management web system for BUMK (such as bumkpujodadibersatu.com), the online game site mabarasik.com, to Android utility tools. Every project is built with clean structure for long-term maintainability.",
+      about_ai_badge: "Modern Paradigm • Agentic AI",
+      about_p_ai:
+        "In today's tech landscape, programming language boundaries are no longer a barrier to becoming an effective developer. I actively embrace <strong>Agentic AI</strong> workflows for rapid coding and cross-stack exploration—placing computational logic, system architecture, and rapid problem-solving at the core of my work.",
       about_p2:
         "Outside of work, I enjoy music and audio gear, watching movies, cycling, and playing strategy games.",
       passion_gaming: "Strategy Games",
@@ -453,6 +480,9 @@
       phil_title_3: "Continuous Improvement",
       phil_desc_3:
         "Keeping technical skills up to date and tailoring solutions to real project needs.",
+      phil_title_4: "Agentic AI & Language-Agnostic",
+      phil_desc_4:
+        "Leveraging Agentic AI to transcend syntax limitations. Modern development centers around architectural problem-solving and efficiency rather than being confined to a single language.",
 
       // Skills
       skills_tag: "Skills",
@@ -466,7 +496,7 @@
         "API development, server integration, and database management.",
       cat_tools: "Tools & Workflow",
       cat_tools_desc:
-        "Supporting tools for testing, version control, and team collaboration.",
+        "Modern engineering practices, Agentic AI workflows, and cross-language production standards.",
 
       // Projects
       proj_tag: "Portfolio",
@@ -526,7 +556,8 @@
       step_2_desc:
         "Designing user interfaces and planning the data structures to be used.",
       step_3_title: "3. Development & Testing",
-      step_3_desc: "Writing and testing code per iteration. Each finished piece is demoed first so your feedback can be applied right away.",
+      step_3_desc:
+        "High-quality code implementation powered by modern Agentic AI workflows for rapid cross-tech iteration, paired with continuous testing to match exact project requirements.",
       step_4_title: "4. Release & Support",
       step_4_desc: "Assisting with server or Play Store deployment, then turning real usage feedback into the next round of improvements.",
 
@@ -890,8 +921,13 @@
     const elements = document.querySelectorAll("[data-i18n]");
     elements.forEach((el) => {
       const key = el.getAttribute("data-i18n");
-      if (translations[lang][key]) {
-        el.textContent = translations[lang][key];
+      const val = translations[lang] && translations[lang][key];
+      if (val !== undefined && val !== null) {
+        if (typeof val === "string" && val.includes("<")) {
+          el.innerHTML = val;
+        } else {
+          el.textContent = val;
+        }
       }
     });
 

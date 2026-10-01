@@ -972,6 +972,64 @@ textarea {
   font-weight: 500;
 }
 
+.story-ai-highlight {
+  position: relative;
+  padding: 16px 20px;
+  background: rgba(139, 92, 246, 0.05);
+  border-left: 3px solid #8b5cf6;
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 4px 0;
+  transition: all 0.25s ease;
+}
+
+.story-ai-highlight:hover {
+  background: rgba(139, 92, 246, 0.09);
+}
+
+[data-theme="dark"] .story-ai-highlight {
+  background: rgba(139, 92, 246, 0.1);
+  border-left-color: #a78bfa;
+}
+
+[data-theme="dark"] .story-ai-highlight:hover {
+  background: rgba(139, 92, 246, 0.16);
+}
+
+.ai-highlight-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #7c3aed;
+}
+
+[data-theme="dark"] .ai-highlight-badge {
+  color: #c4b5fd;
+}
+
+.story-ai-highlight p {
+  font-size: 0.95rem;
+  line-height: 1.75;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.story-ai-highlight strong {
+  color: #7c3aed;
+  font-weight: 600;
+}
+
+[data-theme="dark"] .story-ai-highlight strong {
+  color: #ddd6fe;
+}
+
 .story-body {
   color: var(--text-secondary);
   line-height: 1.8;
@@ -1076,6 +1134,22 @@ textarea {
   background: rgba(5, 150, 105, 0.1);
   color: var(--accent-emerald);
   border-color: rgba(5, 150, 105, 0.2);
+}
+
+.phil-card.ai .phil-icon {
+  background: rgba(139, 92, 246, 0.1);
+  color: #8b5cf6;
+  border-color: rgba(139, 92, 246, 0.22);
+}
+
+[data-theme="dark"] .phil-card.ai .phil-icon {
+  background: rgba(139, 92, 246, 0.15);
+  color: #c4b5fd;
+  border-color: rgba(167, 139, 250, 0.3);
+}
+
+.phil-card.ai:hover {
+  border-color: rgba(139, 92, 246, 0.4);
 }
 
 .phil-title {
@@ -1183,6 +1257,31 @@ textarea {
 
 [data-theme="dark"] .tech-pill.cyan-pill {
   color: #bae6fd;
+}
+
+.tech-pill.ai-pill {
+  background: rgba(139, 92, 246, 0.08);
+  border-color: rgba(139, 92, 246, 0.28);
+  color: #7c3aed;
+  font-weight: 600;
+}
+
+.tech-pill.ai-pill:hover {
+  background: rgba(139, 92, 246, 0.16);
+  border-color: rgba(139, 92, 246, 0.45);
+  color: #6d28d9;
+}
+
+[data-theme="dark"] .tech-pill.ai-pill {
+  background: rgba(139, 92, 246, 0.14);
+  border-color: rgba(167, 139, 250, 0.35);
+  color: #ddd6fe;
+}
+
+[data-theme="dark"] .tech-pill.ai-pill:hover {
+  background: rgba(139, 92, 246, 0.24);
+  border-color: rgba(167, 139, 250, 0.55);
+  color: #ffffff;
 }
 
 /* ==========================================================================
