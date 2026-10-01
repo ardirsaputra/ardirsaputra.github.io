@@ -196,7 +196,6 @@
         en: "A web system supporting BUMK information and financial management.",
       },
       stack: ["PHP", "Laravel", "Database"],
-      link: "https://bumkpujodadibersatu.com",
     },
     {
       marker: "2026",
@@ -257,7 +256,7 @@
       hero_greeting: "Halo, saya Ardi Ragil Saputra",
       hero_role: "Mobile & Web Developer",
       hero_lead:
-        "Pengembang aplikasi mobile dan website. Berpengalaman mengerjakan aplikasi mobile SiapKerja Way Kanan di Google Play Store dan server laravel, website pengelolaan keuangan desa BUMK (bumkpujodadibersatu.com), platform game online mabarasik.com, dan aplikasi Utilitasku Android Tools All in One.",
+        "Pengembang aplikasi mobile dan website. Berpengalaman mengerjakan aplikasi mobile SiapKerja Way Kanan di Google Play Store dan server laravel, website pengelolaan keuangan desa BUMK, platform game online mabarasik.com, dan aplikasi Utilitasku Android Tools All in One.",
       hero_btn_projects: "Lihat Proyek",
       hero_btn_wa: "Chat WhatsApp",
       hero_btn_cv: "Kirim Email",
@@ -280,7 +279,7 @@
       about_lead:
         "Fokus pada pembuatan aplikasi yang fungsional, terstruktur, optimal dan nyaman digunakan.",
       about_p1:
-        "Saya mengembangkan aplikasi mobile dan website untuk berbagai kebutuhan, mulai dari aplikasi presensi pegawai SiapKerja Pemkab Way Kanan di Google Play Store, sistem website pengelolaan keuangan BUMK (seperti bumkpujodadibersatu.com), website game online mabarasik.com, hingga aplikasi utilitasku Android Tools All in One. Setiap proyek dikerjakan dengan struktur kode yang rapi agar mudah dirawat.",
+        "Saya mengembangkan aplikasi mobile dan website untuk berbagai kebutuhan, mulai dari aplikasi presensi pegawai SiapKerja Pemkab Way Kanan di Google Play Store, sistem website pengelolaan keuangan BUMK, website game online mabarasik.com, hingga aplikasi utilitasku Android Tools All in One. Setiap proyek dikerjakan dengan struktur kode yang rapi agar mudah dirawat.",
       about_ai_badge: "Paradigma Baru • Agentic AI",
       about_p_ai:
         "Di era teknologi saat ini, batasan bahasa pemrograman bukan lagi halangan untuk menjadi programmer handal. Saya aktif mengadopsi <strong>Agentic AI</strong> untuk akselerasi coding dan eksplorasi lintas teknologi—memposisikan logika komputasi, arsitektur sistem, dan kecepatan pemecahan masalah nyata sebagai fondasi utama.",
@@ -339,7 +338,8 @@
       proj_bumk_badge: "Website BUMK & Keuangan BUMK",
       proj_bumk_title: "BUMK Pengelolaan Keuangan BUMK",
       proj_bumk_desc:
-        "Website sistem informasi dan tata kelola keuangan Badan Usaha Milik Kampung/Desa (BUMK) untuk pencatatan unit usaha desa, pembukuan kas transparan, dan akuntabilitas pelaporan dana desa secara terbuka, dengan contoh nyata pada bumkpujodadibersatu.com.",
+        "Website sistem informasi dan tata kelola keuangan Badan Usaha Milik Kampung/Desa (BUMK) untuk pencatatan unit usaha desa, pembukuan kas transparan, dan akuntabilitas pelaporan dana desa secara terbuka.",
+      proj_internal_system: "Sistem Internal Desa",
 
       proj_mabar_badge: "Platform Web Game",
       proj_mabar_title: "mabarasik.com (Online Board Games)",
@@ -431,7 +431,7 @@
       hero_greeting: "Hello, I am Ardi Ragil Saputra",
       hero_role: "Mobile & Web Developer",
       hero_lead:
-        "Mobile and web developer. Experienced in developing the SiapKerja Way Kanan mobile app on Google Play Store, the village financial management web system for BUMK (bumkpujodadibersatu.com), the multiplayer platform mabarasik.com, and Utilitasku Android Tools All in One.",
+        "Mobile and web developer. Experienced in developing the SiapKerja Way Kanan mobile app on Google Play Store, the village financial management web system for BUMK, the multiplayer platform mabarasik.com, and Utilitasku Android Tools All in One.",
       hero_btn_projects: "View Projects",
       hero_btn_wa: "WhatsApp",
       hero_btn_cv: "Send Email",
@@ -454,7 +454,7 @@
       about_lead:
         "Focused on building functional, structured, and user-friendly software.",
       about_p1:
-        "I build mobile apps and websites for various needs, from the civil servant attendance app for Pemkab Way Kanan on Google Play Store, the village enterprise financial management web system for BUMK (such as bumkpujodadibersatu.com), the online game site mabarasik.com, to Android utility tools. Every project is built with clean structure for long-term maintainability.",
+        "I build mobile apps and websites for various needs, from the civil servant attendance app for Pemkab Way Kanan on Google Play Store, the village enterprise financial management web system for BUMK, the online game site mabarasik.com, to Android utility tools. Every project is built with clean structure for long-term maintainability.",
       about_ai_badge: "Modern Paradigm • Agentic AI",
       about_p_ai:
         "In today's tech landscape, programming language boundaries are no longer a barrier to becoming an effective developer. I actively embrace <strong>Agentic AI</strong> workflows for rapid coding and cross-stack exploration—placing computational logic, system architecture, and rapid problem-solving at the core of my work.",
@@ -512,7 +512,8 @@
       proj_bumk_badge: "Village Enterprise & Finance",
       proj_bumk_title: "BUMK Village Financial Management",
       proj_bumk_desc:
-        "Web-based financial management system for village-owned enterprises (BUMK/BUMDes), supporting rural business accounting, transparent cashflow ledgers, and public financial accountability, implemented at bumkpujodadibersatu.com.",
+        "Web-based financial management system for village-owned enterprises (BUMK/BUMDes), supporting rural business accounting, transparent cashflow ledgers, and public financial accountability.",
+      proj_internal_system: "Village Internal System",
 
       proj_mabar_badge: "Web Gaming Platform",
       proj_mabar_title: "mabarasik.com (Online Board Games)",
@@ -865,7 +866,7 @@
   // =========================================================================
   const PROJECT_IMAGE_URLS = {
     siapkerja: "", // Project 1: SiapKerja Way Kanan (Play Store)
-    bumk: "", // Project 2: Website BUMK (bumkpujodadibersatu.com)
+    bumk: "", // Project 2: Website BUMK
     mabarasik: "", // Project 3: Website Game (mabarasik.com)
     androidTools: "", // Project 4: UtilitasKu (Android Tools All in One)
     // playStore: ""      // (Disembunyikan sementara: akun Play Store sedang non-aktif/banned)

@@ -65,8 +65,8 @@ ID: Mobile & Web Developer
 EN: Mobile & Web Developer
 
 #### hero_lead  [2 bahasa]  `.hero-content`
-ID: Pengembang aplikasi mobile dan website. Berpengalaman mengerjakan aplikasi mobile SiapKerja Way Kanan di Google Play Store dan server laravel, website pengelolaan keuangan desa BUMK (bumkpujodadibersatu.com), platform game online mabarasik.com, dan aplikasi Utilitasku Android Tools All in One.
-EN: Mobile and web developer. Experienced in developing the SiapKerja Way Kanan mobile app on Google Play Store, the village financial management web system for BUMK (bumkpujodadibersatu.com), the multiplayer platform mabarasik.com, and Utilitasku Android Tools All in One.
+ID: Pengembang aplikasi mobile dan website. Berpengalaman mengerjakan aplikasi mobile SiapKerja Way Kanan di Google Play Store dan server laravel, website pengelolaan keuangan desa BUMK, platform game online mabarasik.com, dan aplikasi Utilitasku Android Tools All in One.
+EN: Mobile and web developer. Experienced in developing the SiapKerja Way Kanan mobile app on Google Play Store, the village financial management web system for BUMK, the multiplayer platform mabarasik.com, and Utilitasku Android Tools All in One.
 
 #### hero_btn_projects  [2 bahasa]  `.btn-primary`
 ID: Lihat Proyek
@@ -140,8 +140,8 @@ ID: 📍 Lampung, Indonesia
 EN: 📍 Lampung, Indonesia
 
 #### about_p1  [2 bahasa]  `.glass-card.story-card`
-ID: Saya mengembangkan aplikasi mobile dan website untuk berbagai kebutuhan, mulai dari aplikasi presensi pegawai SiapKerja Pemkab Way Kanan di Google Play Store, sistem website pengelolaan keuangan BUMK (seperti bumkpujodadibersatu.com), website game online mabarasik.com, hingga aplikasi utilitasku Android Tools All in One. Setiap proyek dikerjakan dengan struktur kode yang rapi agar mudah dirawat.
-EN: I build mobile apps and websites for various needs, from the civil servant attendance app for Pemkab Way Kanan on Google Play Store, the village enterprise financial management web system for BUMK (such as bumkpujodadibersatu.com), the online game site mabarasik.com, to Android utility tools. Every project is built with clean structure for long-term maintainability.
+ID: Saya mengembangkan aplikasi mobile dan website untuk berbagai kebutuhan, mulai dari aplikasi presensi pegawai SiapKerja Pemkab Way Kanan di Google Play Store, sistem website pengelolaan keuangan BUMK, website game online mabarasik.com, hingga aplikasi utilitasku Android Tools All in One. Setiap proyek dikerjakan dengan struktur kode yang rapi agar mudah dirawat.
+EN: I build mobile apps and websites for various needs, from the civil servant attendance app for Pemkab Way Kanan on Google Play Store, the village enterprise financial management web system for BUMK, the online game site mabarasik.com, to Android utility tools. Every project is built with clean structure for long-term maintainability.
 
 #### about_p2  [2 bahasa]  `.glass-card.story-card`
 ID: Di luar pekerjaan, saya menikmati musik dan dunia audio, menonton film, bersepeda, serta bermain game strategi.
@@ -454,16 +454,16 @@ ID: BUMK Pengelolaan Keuangan BUMK
 EN: BUMK Village Financial Management
 
 #### [HTML baris 1074]  `.project-title`
-ID: bumkpujodadibersatu.com
-EN: bumkpujodadibersatu.com
+ID: Sistem Web
+EN: Web System
 
 #### proj_bumk_desc  [2 bahasa]  `.project-body`
-ID: Website sistem informasi dan tata kelola keuangan Badan Usaha Milik Kampung/Desa (BUMK) untuk pencatatan unit usaha desa, pembukuan kas transparan, dan akuntabilitas pelaporan dana desa secara terbuka, dengan contoh nyata pada bumkpujodadibersatu.com.
-EN: Web-based financial management system for village-owned enterprises (BUMK/BUMDes), supporting rural business accounting, transparent cashflow ledgers, and public financial accountability, implemented at bumkpujodadibersatu.com.
+ID: Website sistem informasi dan tata kelola keuangan Badan Usaha Milik Kampung/Desa (BUMK) untuk pencatatan unit usaha desa, pembukuan kas transparan, dan akuntabilitas pelaporan dana desa secara terbuka.
+EN: Web-based financial management system for village-owned enterprises (BUMK/BUMDes), supporting rural business accounting, transparent cashflow ledgers, and public financial accountability.
 
 #### [HTML baris 1091]  `.project-tag`
-ID: bumkpujodadibersatu.com
-EN: bumkpujodadibersatu.com
+ID: Sistem Keuangan Desa
+EN: Sistem Keuangan Desa
 
 #### [HTML baris 1093]  `.project-tag`
 ID: Sistem Keuangan Desa
@@ -1188,7 +1188,7 @@ done
 PHP, Laravel, Database
 
 #### link (kosongkan kalau tidak ada)
-https://bumkpujodadibersatu.com
+
 
 ### Kartu 13
 
@@ -1262,7 +1262,7 @@ Ardi Ragil Saputra | Mobile & Web Developer
 Portofolio resmi Ardi Ragil Saputra (Ars Dev). Pengembang aplikasi mobile Android / Flutter dan website (SiapKerja Way Kanan, BUMK Keuangan Desa, mabarasik.com).
 
 #### meta keywords (kata kunci)
-Ardi Ragil Saputra, Ars Dev, Flutter Developer, Android Developer, Mobile Engineer Indonesia, SiapKerja Way Kanan, BUMK Pujodadi Bersatu, bumkpujodadibersatu.com, Keuangan bumk, mabarasik.com, UtilitasKu, Web Developer
+Ardi Ragil Saputra, Ars Dev, Flutter Developer, Android Developer, Mobile Engineer Indonesia, SiapKerja Way Kanan, BUMK Pujodadi Bersatu, Keuangan bumk, mabarasik.com, UtilitasKu, Web Developer
 
 #### og:title (judul saat link dibagikan ke WA/FB)
 Ardi Ragil Saputra | Mobile & Web Developer
@@ -1357,7 +1357,7 @@ https://www.fiverr.com/ardirs?public_mode=true
 https://play.google.com/store/apps/details?id=id.co.waykanankab.siapkerja&hl=id
 
 #### [HTML baris 1099] - DAFTAR PROYEK
-https://bumkpujodadibersatu.com
+(Sistem Internal - Tanpa Link Publik)
 
 #### [HTML baris 1211] - DAFTAR PROYEK
 https://mabarasik.com
